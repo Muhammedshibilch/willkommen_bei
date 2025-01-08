@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-<<<<<<< HEAD
-    <div className='text-green-800'>Home</div>
-=======
     <div>
 
 <div className="row">
@@ -171,13 +168,12 @@ const Home = () => {
 
 <div className="row">
   <div className="col-12 mt-5">
-    <img src="https://www.med-geraete.de/thumbnail/8f/10/3d/1658145358/Start-Footer_1920x1920.jpg?ts=1658145373" alt="" />
+    <img src="https://www.med-geraete.de/thumbnail/8f/10/3d/1658145358/Start-Footer_1920x1920.jpg?ts=1658145373" width={'100%'} alt="" />
   </div>
 </div>
 
 
     </div>
->>>>>>> 8377dac1127966c56f1ec966a432143709f7d8de
   )
 }
 
