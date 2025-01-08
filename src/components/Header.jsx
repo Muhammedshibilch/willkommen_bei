@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import SideModal from "./SideModal";
 
 const Header = () => {
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+
+
+
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
