@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 import SideModal from "./SideModal";
 
 const Header = () => {
-
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-
-
-
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -26,9 +22,13 @@ const Header = () => {
   return (
     <>
       <div className="bg-blue-500 flex justify-between items-center p-2">
-        <div className="text-white font-bold"><Link to={'/contact'}>Contact</Link></div>
+        <div className="text-white font-bold">
+          <Link to={'/contact'} className="text-white">Contact</Link>
+        </div>
         <div className="text-white">Excellent quality at a good price</div>
-        <div className="text-white"><Link to={'/warrenty'}>1 year warranty</Link></div>
+        <div className="text-white">
+          <Link to={'/warrenty'} className="text-white">1 year warranty</Link>
+        </div>
       </div>
 
       <header className="bg-white shadow-md">
@@ -56,27 +56,24 @@ const Header = () => {
                     </svg>
                   </button>
                   {userDropdownOpen && (
-                   <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg">
-                   <ul>
-                     <li className="px-4 py-2 hover:bg-gray-100 font-bold"><a href="#">Your Account</a></li>
-                     <hr />
-                     <li className="px-4 py-2 hover:bg-gray-100">
-                       <a href="#">
-                         <Link to={'/auth'}>
-                           <button className="bg-blue-700 text-white px-4 py-2 rounded">Log in</button>
-                         </Link>
-                       </a>
-                     </li>
-                     <li className="px-4 py-2">or <Link to={'/auth'} className="text-blue-300">Sign up</Link></li>
-                     <hr />
-                     <li className="px-4 py-2 hover:bg-gray-100"><a href="#">Overview</a></li>
-                     <li className="px-4 py-2 hover:bg-gray-100"><a href="#">Your Profile</a></li>
-                     <li className="px-4 py-2 hover:bg-gray-100"><a href="#">Addresses</a></li>
-                     <li className="px-4 py-2 hover:bg-gray-100"><a href="#">Payment Methods</a></li>
-                     <li className="px-4 py-2 hover:bg-gray-100"><a href="#">Orders</a></li>
-                   </ul>
-                 </div>
-                 
+                    <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10">
+                      <ul>
+                        <li className="px-4 py-2 hover:bg-gray-100 font-bold"><a href="#">Your Account</a></li>
+                        <hr />
+                        <li className="px-4 py-2 hover:bg-gray-100">
+                          <Link to={'/auth'}>
+                            <button className="bg-blue-700 text-white px-4 py-2 rounded w-full">Log in</button>
+                          </Link>
+                        </li>
+                        <li className="px-4 py-2 text-center">or <Link to={'/auth'} className="text-blue-300">Sign up</Link></li>
+                        <hr />
+                        <li className="px-4 py-2  hover:bg-gray-100"><a className="text-black" href="#">Overview</a></li>
+                        <li className="px-4 py-2  hover:bg-gray-100"><a className="text-black" href="#">Your Profile</a></li>
+                        <li className="px-4 py-2 hover:bg-gray-100"><a className="text-black" href="#">Addresses</a></li>
+                        <li className="px-4 py-2 hover:bg-gray-100"><a className="text-black" href="#">Payment Methods</a></li>
+                        <li className="px-4 py-2 hover:bg-gray-100"><a className="text-black" href="#">Orders</a></li>
+                      </ul>
+                    </div>
                   )}
                 </div>
                 <button onClick={toggleModal} className="text-gray-600 flex items-center">
@@ -96,7 +93,7 @@ const Header = () => {
                     </svg>
                   </button>
                   {dropdownOpen && (
-                    <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg">
+                    <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg z-10">
                       <ul>
                         <li className="px-4 py-2 hover:bg-gray-100"><a href="#">Deutsch</a></li>
                         <li className="px-4 py-2 hover:bg-gray-100"><a href="#">English</a></li>
@@ -110,7 +107,7 @@ const Header = () => {
             </div>
           </div>
           <nav className="w-full px-3 flex justify-center lg:justify-between flex-wrap space-y-2 lg:space-y-0 space-x-6 lg:space-x-0 mt-4 lg:mt-0">
-            <Link to="/" className="text-blue-900 font-semibold">Home</Link>
+            <Link to="/"  className="text-gray-600 font-semibold">Home</Link>
             <Link to="/latest-news" className="text-gray-600">Latest news</Link>
             <Link to="/company" className="text-gray-600">Company</Link>
             <Link to="/shop" className="text-gray-600">Shop</Link>

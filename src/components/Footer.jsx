@@ -15,19 +15,19 @@ const Footer = () => {
         <div className="mb-4">
           <h2 className="font-bold mb-2 leading-tight">Dr. Wilfried Müller GmbH</h2>
           <ul>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">Contact</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">General Terms and Conditions</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">Privacy policy</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">Imprint</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">Terms of delivery</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Contact</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">General Terms and Conditions</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Privacy policy</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Imprint</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Terms of delivery</a></li>
           </ul>
         </div>
         <div className="mb-4">
           <h2 className="font-bold mb-2 leading-tight">Service</h2>
           <ul>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">About us</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">Subscribe to the newsletter</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed">Warranty</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">About us</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Subscribe to the newsletter</a></li>
+            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Warranty</a></li>
           </ul>
         </div>
       </div>
