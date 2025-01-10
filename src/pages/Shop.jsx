@@ -86,7 +86,7 @@ const Shop = () => {
     <div className="col-lg-4">
       <h4 className="text-sky-600">Anesthesia and ventilation</h4>
       <p className="font-thin">We offer anaesthesia equipment for all areas: Human medicine, veterinary medicine, and research.</p>
-  <Link><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>    
+  <Link to={'/shop/Anesthesia-and-ventilation'}><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>    
         </div>
     <div className="col-lg-4">
       <img src="https://www.med-geraete.de/thumbnail/32/54/59/1659013956/Kategorie-Narkose-und-Beatmung_800x800.jpg?ts=1659013956" alt="" />
@@ -103,7 +103,7 @@ const Shop = () => {
     <h4 className="text-sky-600">
     Endoscopy</h4>
       <p className="font-light">We mainly supply endoscopes from OLYMPUS, primarily offering flexible endoscopes</p>
-  <Link><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>      </div>
+  <Link to={'/shop/Flexible-endoscopes'}><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>      </div>
     <div className="col-lg-2"></div>
   </div>
 
@@ -112,7 +112,7 @@ const Shop = () => {
     <div className="col-lg-4">
       <h4 className="text-sky-600">Operating tables</h4>
       <p className="font-thin">We offer high-quality, mobile operating tables from Maquet, Schmitz, and Trumpf</p>
-  <Link><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>    
+  <Link to={'/shop/Operating-tables-and-patient-trolleys'}><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>    
         </div>
     <div className="col-lg-4">
       <img src="https://www.med-geraete.de/thumbnail/f7/9a/6d/1659013956/Kategorie-Op-Tische_800x800.jpg?ts=1659013956" alt="" />
@@ -131,7 +131,7 @@ const Shop = () => {
     
 HF surgery</h4>
       <p className="font-light">You will find both monopolar and bipolar medical devices in our range. We also offer devices for special applications such as endoscopy.</p>
-  <Link><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>      </div>
+  <Link to={'/shop/HF-Surgery'}><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>      </div>
     <div className="col-lg-2"></div>
   </div>
 
@@ -140,7 +140,7 @@ HF surgery</h4>
     <div className="col-lg-4">
       <h4 className="text-sky-600">Defibrillators</h4>
       <p className="font-thin">Here you will find the following device categories: Monophasic and biphasic devices, devices with or without additional functions with and without printers, manual devices, semi-automatic, and fully automatic devices.</p>
-  <Link><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>    
+  <Link to={'/shop/Defibrillators'}><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>    
         </div>
     <div className="col-lg-4">
       <img src="https://www.med-geraete.de/thumbnail/c4/c4/e2/1659013956/Kategorie-Defibrillatoren_800x800.jpg?ts=1659013956" alt="" />
@@ -160,7 +160,7 @@ HF surgery</h4>
 
     Infusers Perfusors</h4>
       <p className="font-light">In our programme you will find perfusors and infusomats from the manufacturers BRAUN and Fresenius. Various device types and all accessories such as mounting clamps, infusion stands, and intensive care racks are available.</p>
-  <Link><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>      </div>
+  <Link to={'/shop/Infusors-perfusors'}><button className="bg-sky-800 text-white py-2 px-4  rounded"> To the devices </button>  </Link>      </div>
     <div className="col-lg-2"></div>
   </div>
 </div>
