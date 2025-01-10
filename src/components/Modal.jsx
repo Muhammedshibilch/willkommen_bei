@@ -29,7 +29,7 @@ const Modal = ({ closeModal }) => {
       );
       console.log('Response:', response.data);
       alert('Enquiry submitted successfully!');
-      closeModal(); // Close the modal after successful submission
+      closeModal();
     } catch (error) {
       console.error('Error submitting enquiry:', error);
       toast.error('Failed to submit enquiry. Please try again.');
