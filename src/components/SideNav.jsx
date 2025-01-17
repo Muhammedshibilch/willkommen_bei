@@ -21,26 +21,22 @@ const SideNav = () => {
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Suction pumps
-            </button>
+            Saugpumpen            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Autoclaves and sterilizers
-            </button>
+            Autoklaven und Sterilisatoren            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Blood pressure measurement
-            </button>
+            Messung des Blutdrucks            </button>
           </Link>
           <Link to={"/shop/Defibrillators"}>
             <button className="text-black font-extralight text-sm">
-              Defibrillators
-            </button>
+            Defibrillatoren            </button>
           </Link>
           <Link>
-            <button className="text-black font-extralight text-sm"> ECG</button>
+            <button className="text-black font-extralight text-sm"> EKG</button>
           </Link>
           <Link to={"/shop/Flexible-endoscopes"}>
             {" "}
@@ -48,8 +44,7 @@ const SideNav = () => {
               onClick={() => toggleDropdown("flexibleEndoscopes")}
               className="text-black font-extralight text-sm"
             >
-              Flexible endoscopes
-            </button>
+              Flexible Endoskope            </button>
           </Link>
           {openDropdown === "flexibleEndoscopes" && (
             <div className="ml-4 mt-2 space-y-2">
@@ -57,66 +52,57 @@ const SideNav = () => {
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Bronchoscopes
-              </Link>
+                Bronchoskope              </Link>
               <Link
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Choledochoscopes
-              </Link>
+                Choledochoskope              </Link>
               <Link
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Cystoscopes
-              </Link>
+                Zystoskope              </Link>
               <Link
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Duodenoscopes
-              </Link>
+                Duodenoskope              </Link>
               <Link
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Gastroscopes
-              </Link>
+                Gastroskope              </Link>
               <Link
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Hysteroscopes
-              </Link>
+                Hysteroskope              </Link>
               <Link
                 to={"/shop/Flexible-endoscopes"}
                 className="block text-sky-500 font-extralight text-sm"
               >
-                Coloscopes
-              </Link>
+                Koloskope              </Link>
             </div>
           )}
+
+
           <Link>
             {" "}
             <button
               onClick={() => toggleDropdown("endoscopyColdLightSources")}
               className="text-black font-extralight text-sm"
             >
-              Endoscopy-cold light sources
-            </button>
+              Endoskopie-Kaltlichtquellen            </button>
           </Link>
           {openDropdown === "endoscopyColdLightSources" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Olympus
-              </Link>
+              Olymp              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Other manufacturer
-              </Link>
+              Anderer Hersteller              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Storz
-              </Link>
+              Storz              </Link>
             </div>
           )}
           <Link>
@@ -124,119 +110,99 @@ const SideNav = () => {
               onClick={() => toggleDropdown("endoscopyfittings")}
               className="text-black font-extralight text-sm"
             >
-              Endoscopy-fittings
-            </button>
+              Endoskopie-Fittings            </button>
           </Link>
           {openDropdown === "endoscopyfittings" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Endoscopy Towers
-              </Link>
+              Endoskopie-Türme              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
                 Video
               </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                more fittings
-              </Link>
+              weitere Ausstattungen              </Link>
             </div>
           )}
           <Link>
             <button className="text-black font-extralight text-sm">
-              Chassis and monitor carrier
-            </button>
+            Gehäuse und Monitorträger            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Repository
-            </button>
+            Aufbewahrungsort            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Gynaecology
-            </button>
+            Gynäkologie            </button>
           </Link>
           <Link to={"/shop/HF-Surgery"}>
             <button className="text-black font-extralight text-sm">
-              HF surgery
-            </button>
+            HF-Chirurgie            </button>
           </Link>
           <Link to={"/shop/Infusors-perfusors"}>
             <button className="text-black font-extralight text-sm">
-              Infusors perfusors
-            </button>
+            Infusoren Perfusoren            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Incubators
-            </button>
+            Inkubatoren            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Laboratory equipment
-            </button>
+            Laborausstattung            </button>
           </Link>
           <Link>
             <button
               onClick={() => toggleDropdown("medicalantiques")}
               className="text-black font-extralight text-sm"
             >
-              Medical antiques
-            </button>
+              Medizinische Antiquitäten            </button>
           </Link>
           {openDropdown === "medicalantiques" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Lights
-              </Link>
+              Lichter              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Anesthesia equipment
-              </Link>
+              Anästhesie-Geräte              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                other
-              </Link>
+              andere              </Link>
             </div>
           )}
           <Link>
             <button className="text-black font-extralight text-sm">
-              Microscope
-            </button>
+            Mikroskop            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Furniture
-            </button>
+            Möbel            </button>
           </Link>
           <Link>
             <button
               onClick={() => toggleDropdown("monitoring")}
               className="text-black font-extralight text-sm"
             >
-              Monitoring
-            </button>
+              Überwachung            </button>
           </Link>
           {openDropdown === "monitoring" && (
+
+
+
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
                 Datex
               </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Draeger
-              </Link>
+              Draeger              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Hellige/Marquette
-              </Link>
+              Hellige/Marquette              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Nellcor
-              </Link>
+              Nellcor              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Siemens
-              </Link>
+              Siemens              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                other
-              </Link>
+              andere              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Accessories of monitors
-              </Link>
+              Zubehör von Monitoren              </Link>
             </div>
           )}
           <Link to={"/shop/Anesthesia-and-ventilation"}>
@@ -244,41 +210,30 @@ const SideNav = () => {
               onClick={() => toggleDropdown("ventilation")}
               className="text-black font-extralight text-sm"
             >
-              Anaesthesia and ventilation
-            </button>
+              Anästhesie und Beatmung            </button>
           </Link>
           {openDropdown === "ventilation" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Ventilation equipment
-              </Link>
+              Lüftungsgeräte              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Pressure reducers und central gas supply
-              </Link>
+              Druckminderer und zentrale Gasversorgung              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Flowmeters
-              </Link>
+              Durchflussmesser              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Gas provision and electricity supply
-              </Link>
+              Gasversorgung und Stromversorgung              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Equipment fittings
-              </Link>
+              Ausstattung der Ausrüstung              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Compressors,concentrators
-              </Link>
+              Kompressoren, Konzentratoren              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Breathing circuit and fittings
-              </Link>
+              Beatmungsschlauch und Armaturen              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Anesthesia equipment
-              </Link>
+              Anästhesie-Geräte              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Oxygen bubblers
-              </Link>
+              Sauerstoff-Bubbler              </Link>
               <Link className="block text-sky-500 font-extralight text-xs">
-                Vapors (anaesthetic vaporisers)
-              </Link>
+              Dämpfe (Anästhesieverdampfer)              </Link>
             </div>
           )}
           <Link>
@@ -286,23 +241,18 @@ const SideNav = () => {
               onClick={() => toggleDropdown("investigationlights")}
               className="text-black font-extralight text-sm"
             >
-              OP and investigation lights
-            </button>
+              OP- und Untersuchungsleuchten            </button>
           </Link>
           {openDropdown === "investigationlights" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Bulbs
-              </Link>
+              Glühbirnen              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                OP lights
-              </Link>
+              OP-Leuchten              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Transformers and UPS
-              </Link>
+              Transformatoren und USV              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Investigation lights
-              </Link>
+              Untersuchungsleuchten              </Link>
             </div>
           )}
           <Link to={'/shop/Operating-tables-and-patient-trolleys'}>
@@ -310,20 +260,16 @@ const SideNav = () => {
               onClick={() => toggleDropdown("patienttrolleys")}
               className="text-black font-extralight text-sm"
             >
-              Operating tables and patient
-            </button>
+              Operationstische und Patient            </button>
           </Link>
           {openDropdown === "patienttrolleys" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Operating tables
-              </Link>
+              OP-Tische              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Accessories for operating tables
-              </Link>
+              Zubehör für OP-Tische              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Patient trolleys
-              </Link>
+              Patientenwagen              </Link>
             </div>
           )}
           <Link>
@@ -331,62 +277,50 @@ const SideNav = () => {
               onClick={() => toggleDropdown("fluoroscopy")}
               className="text-black font-extralight text-sm"
             >
-              X-ray fluoroscopy
-            </button>
+              Röntgen-Durchleuchtung            </button>
           </Link>
           {openDropdown === "fluoroscopy" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Mobile c-arms
-              </Link>
+              Mobile C-Bögen              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Accessories of mobile c-arms
-              </Link>
+              Zubehör von mobilen C-Bögen              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                x-ray machines
-              </Link>
+              Röntgengeräte              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Accessories of x-ray machines
-              </Link>
+              Zubehör von Röntgengeräten              </Link>
             </div>
           )}
           <Link>
             <button className="text-black font-extralight text-sm">
-              Other
-            </button>
+            Andere            </button>
           </Link>
           <Link>
             <button
               onClick={() => toggleDropdown("ultrasound")}
               className="text-black font-extralight text-sm"
             >
-              Ultrasound sound devices
-            </button>
+              Ultraschall-Tongeräte            </button>
           </Link>
           {openDropdown === "ultrasound" && (
             <div className="ml-4 mt-2 space-y-2">
               <Link className="block text-sky-500 font-extralight text-sm">
-                Ultrasound systems
-              </Link>
+              Ultraschall-Systeme              </Link>
               <Link className="block text-sky-500 font-extralight text-sm">
-                Ultrasonic nebuilzers
-              </Link>
+              Ultraschall-Vernebler              </Link>
             </div>
           )}
           <Link>
             <button className="text-black font-extralight text-sm">
-              Investigation
-            </button>
+            Untersuchung            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Video printer and recorder
-            </button>
+            Videodrucker und -recorder            </button>
           </Link>
           <Link>
             <button className="text-black font-extralight text-sm">
-              Dental treatment
-            </button>
+            Zahnarztbehandlung            </button>
           </Link>
           <hr />
           <div className=" rounded-md w-64">
@@ -398,8 +332,7 @@ const SideNav = () => {
                 className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded leading-tight focus:outline-none focus:shadow-outline"
               >
                 
-                Price
-                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                Preis                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   
                   <svg
                     className="fill-current h-4 w-4"

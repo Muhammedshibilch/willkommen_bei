@@ -2,37 +2,103 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-500 text-black p-8" style={{height:"400px"}}>
+    <footer className="bg-zinc-500 text-black p-8" style={{ height: "400px" }}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="mb-4">
-          <h2 className="font-bold mb-2 leading-tight">Customer service hotline</h2>
-          <p className="leading-relaxed">For support and advice, please contact:</p>
+          <h2 className="font-bold mb-2 leading-tight">
+            Kundenservice-Hotline
+          </h2>
+          <p className="leading-relaxed">
+            Für Unterstützung und Beratung wenden Sie sich bitte an:
+          </p>
           <p className="font-bold my-2 leading-relaxed">+49-(0)8206 9624-0</p>
-          <p className="leading-relaxed">Mon-Thu, 7 am - 5 pm</p>
-          <p className="leading-relaxed">Fri, 7 am - 1 pm</p>
-          <p className="leading-relaxed">Or via our contact form.</p>
+          <p className="leading-relaxed">Mo-Do, 7 Uhr - 17 Uhr</p>
+          <p className="leading-relaxed">Fr, 7 Uhr - 13 Uhr</p>
+          <p className="leading-relaxed">Oder über unser Kontaktformular.</p>
         </div>
         <div className="mb-4">
-          <h2 className="font-bold mb-2 leading-tight">Dr. Wilfried Müller GmbH</h2>
+          <h2 className="font-bold mb-2 leading-tight">
+            Dr. Wilfried Müller GmbH
+          </h2>
           <ul>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Contact</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">General Terms and Conditions</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Privacy policy</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Imprint</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Terms of delivery</a></li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Kontakt
+              </a>
+            </li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Allgemeine Geschäftsbedingungen
+              </a>
+            </li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Datenschutzrichtlinie
+              </a>
+            </li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Impressum
+              </a>
+            </li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Lieferbedingungen
+              </a>
+            </li>
           </ul>
         </div>
         <div className="mb-4">
           <h2 className="font-bold mb-2 leading-tight">Service</h2>
           <ul>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">About us</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Subscribe to the newsletter</a></li>
-            <li className="my-1"><a href="#" className="hover:underline leading-relaxed text-black">Warranty</a></li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Über uns
+              </a>
+            </li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Newsletter abonnieren
+              </a>
+            </li>
+            <li className="my-1">
+              <a
+                href="#"
+                className="hover:underline leading-relaxed text-black"
+              >
+                Garantie
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <p className="mt-8 text-sm text-center leading-relaxed">
-        * All prices excl. VAT plus <a href="#" className="hover:underline">shipping costs</a> and possible delivery charges, if not stated otherwise.
+        * Alle Preise zzgl. MwSt. zuzüglich{" "}
+        <a href="#" className="hover:underline">
+          Versandkosten
+        </a>{" "}
+        und eventueller Liefergebühren, sofern nicht anders angegeben.
       </p>
     </footer>
   );

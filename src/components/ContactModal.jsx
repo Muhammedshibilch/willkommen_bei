@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ContactModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -10,92 +10,521 @@ const ContactModal = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-gray-700 bg-opacity-50 flex items-center justify-center" onClick={handleOverlayClick}>
+    <div
+      className="fixed inset-0 bg-gray-700 bg-opacity-50 flex items-center justify-center"
+      onClick={handleOverlayClick}
+    >
       <div className="bg-white p-8 rounded shadow-lg max-w-5xl mx-auto max-h-full overflow-y-auto w-full">
-        <h2 className="text-2xl font-bold mb-4 text-blue-400">Privacy Policy</h2>
+        <h2 className="text-2xl font-bold mb-4 text-blue-400">
+          Privacy Policy
+        </h2>
         <hr />
         <div className="mb-4">
-          <p>Dr Wilfried Müller GmbH takes the protection of your personal data very seriously.</p> <br />
+          <p>
+            Dr Wilfried Müller GmbH takes the protection of your personal data
+            very seriously.
+          </p>{" "}
+          <br />
           {/* Add more paragraphs here */}
-          <p>We collect and use data strictly in accordance with the provisions of the General Data Protection Regulation and the new German Federal Data Protection Act. We are committed to the confidentiality of your personal data and therefore work within the legal limits. Your personal data is only collected to the extent necessary. Your data will only be forwarded to third parties at your specific request. In addition, data will be forwarded to third parties if required by law.</p><br />
-          <p>We only collect personal data that we believe is necessary for order processing or to respond to your enquiry, to fulfil contractual obligations, to ensure the operation of the website, is of legitimate interest to us or for which you have given us your consent to process. The legal basis results from Art. 6 para. 1 a), b), f) GDPR.</p> <br />
-          <p>If you give your consent, we collect data to the extent authorised by you. If you contact us via the contact options offered, your details will be stored so that they can be used to process and respond to your enquiry.</p><br />
-          <p>If you leave a post or comment on this website, your IP address will be saved. This is for security reasons: if your text violates applicable law, it is necessary to trace your identity.</p><br />
-          <p>It is normally possible to use our website without providing personal data. If such personal data is collected on our website, this is always done on a voluntary basis as far as possible. This data collected by us will not be passed on to third parties without your express consent.</p><br />
-          <p>We would like to take this opportunity to point out once again that data transmission over the Internet, for example by e-mail, may be subject to security vulnerabilities. Complete protection of data against access by third parties cannot be guaranteed.</p><br />
-          <p>We adhere to the principles of data avoidance and data minimisation. We therefore only store your personal data for as long as is necessary to fulfil the purposes stated here or for the various storage periods stipulated by law. Once the respective purpose no longer applies or these periods have expired, the corresponding data is routinely blocked or deleted in accordance with the statutory provisions.</p><br />
-          <p className='font-bold'>xplanation of terms</p><br />
-          <p>Website includes all individual web pages provided by us under the domain www.drwmuellergmbh.de.</p><br />
-          <p>The GDPR is Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).</p><br />
-          <p>According to Art. 4 (1) GDPR, personal data means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.</p><br />
-          <p>Processing within the meaning of Art. 4 (2) GDPR is any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.</p><br />
-          <p>According to Art. 4(4) GDPR, profiling is any form of automated processing of personal data consisting of the use of personal data to evaluate personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements.</p><br />
-          <p className="font-bold">General data</p><br />
-          <p>Our website collects a range of general data and information each time you or an automated system access it. This information and data is stored in server log files. This may include the following information:</p><br />
-          <p>Browser system and versions used by the user</p><br />
-          <p>the operating system used by the user</p><br />
-          <p>the website from which the user accessed our website</p><br />
-          <p>the sub-websites accessed by the user on our website</p><br />
-          <p>Date and time of access to our respective website</p><br />
-          <p>IP address</p><br />
-          <p>Internet service provider via which the user accesses the web pages</p><br />
-          <p>Data and information used for security purposes in the event of attacks on our IT system</p><br />
-          <p>We do not draw any conclusions about the data subject from this data. The information is used solely for the operation of the website, its ongoing functionality and its optimisation. In the event of illegal activities, this information may be made available to the investigating authorities. Last but not least, this information enables us to ensure and improve data protection on an ongoing basis.</p><br />
-          <p>The basis for data processing is Art. 6 para. 1 f) GDPR. The processing here serves our legitimate interest in the proper operation of our website.</p><br />
-          <p className="font-bold">Cookies</p><br />
-          <p>Our website sometimes uses cookies. These are small text files that are stored on your computer and saved by your browser. Cookies do not damage your computer and do not contain viruses. Cookies are used to make our website more user-friendly, effective and secure. Some cookies contain a so-called cookie ID. A cookie ID is a unique identifier of the respective cookie. The identifier consists of a string of characters that can be used to assign websites and servers to the specific Internet browser in which the cookie was stored. This enables the websites and servers visited to distinguish the individual browser of the data subject from other Internet browsers that contain other cookies. The respective browser can thus be recognised and identified via the unique cookie ID.</p>
-<br />
-<p>Most of the cookies we use are so-called "fashion cookies". They are automatically deleted at the end of your visit, while other cookies remain stored on your end device until you delete them. The cookies enable us to recognise your browser on your next visit.</p><br />
-<p>Of course, you can also use our website without cookies being used. You can set your browser so that you are informed about the installation of cookies and only allow them in individual cases. You can also exclude the acceptance of cookies for certain cases or in general. It is also possible to select the automatic deletion of cookies when closing the browser.</p><br />
-<p>The settings required for this in the Internet browser you are using can be found in the help function of your browser or in the documentation for the browser you are using.</p><br />
-<p>We would like to point out that rejecting or displaying cookies may affect the functionality of our website.</p><br />
-<p>The legal basis for the use of cookies results from Art. 6 para. 1 f) GDPR. We have a legitimate interest in the use of cookies in order to provide a technically error-free and optimised website.</p><br />
-<p className="font-bold">Contact form</p><br />
-<p>If you send us enquiries via the contact form, your details from the form, including the contact details you provide there, will be stored by us for the purpose of processing the enquiry and in the event of follow-up questions. The data includes your surname, first name and email address as well as the country from which you are writing to us. Optionally, you can also provide further information, such as your telephone number. We need this information in order to provide you with more specific information about your enquiry. The basis for processing this data is Art. 6(1)(b) GDPR. We do not pass on this data without your consent. During registration, the IP address assigned by the data subject's internet service provider and the date and time of registration are also stored. After your enquiry has been dealt with, we will delete your data unless you have given your consent for further use or commercial or tax laws prevent this.</p><br />
-<p className="font-bold">Our newsletter</p><br />
-<p>You have the option of opting in to receive a newsletter. The newsletter will provide you with information on interesting products and services. You can unsubscribe from the newsletter at any time. You will be informed of the corresponding link in each individual newsletter. The legal basis for the use of personal data results from Art. 6 para. 1 f) GDPR. You can unsubscribe from the newsletter at any time. When you unsubscribe, your data in connection with the newsletter will be deleted immediately. Our newsletter is sent via the company rapidmail GmbH, Augustinerplatz 2, 79098 Freiburg i.Br., Tel. 0800 - 444 6 777, Fax +49 761 582 00 66, Email support@rapidmail.de. Further information on data protection at CreateSend can be found at the following link:</p><br />
-<p className='font-bold'>Google Analytics</p><br />
-
-<p>Our website uses functions of the Google Analytics web analysis service. This is used on the basis of Art. 6 para. 1 sentence 1 lit f. GDPR. The provider is Google Inc. 1600 Amphitheatre Parkway Mountain View, CA 94043, USA. Cookies are also used as part of Google Analytics. These are text files that are stored on your computer and enable your use of the website to be analysed. The information generated by the cookie about your use of this website is usually transferred to a Google server in the USA and stored there. This includes the browser type/version, the operating system used, the previously visited page, the IP address and the time of the server request.</p><br />
-<p>The processing of data in connection with Google Analytics is based on Art. 6 para. 1 f) GDPR. As the operator of our website, we have an interest in analysing user behaviour in order to optimise both our offering on our websites and our advertising. By using the internet, you are aware that such analyses are carried out. The data collected to carry out the analysis and optimisation is not of overriding value to the user.</p><br />
-<p>However, if IP anonymisation is activated on this website, your IP address will first be truncated by Google within member states of the European Union or in other signatory states to the Agreement on the European Economic Area. Only in exceptional cases will the full IP address be transmitted to a Google server in the USA and truncated there. Google will use this information on our behalf to analyse your use of the website, to compile reports on website activity and to provide other services relating to website activity and internet usage to the website operator. The IP address transmitted by your browser as part of Google Analytics will not be merged with other Google data.</p><br />
-<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by Google by downloading and installing the browser add-on available at the following link:</p><br />
-<p>In addition to the option to install the browser add-on, there is another alternative to prevent the collection of data by Google Analytics. This is particularly interesting for users of mobile devices. Please click on this link: Deactivate Google Analytics</p><br />
-<p>This will install an opt-out cookie that prevents data from being checked on this website. The function remains in place until the cookie is deleted. If the cookie has been deleted, simply click on the link again. Further information on the terms of use and data protection can be found on the following pages.</p><br />
-<p>http://google.com/analytics/terms/de.html
-
-</p><br />
-<p>http://www.google.de/intl/de/policies/</p><br />
-<p>Finally, we would like to point out that the code "anonymizeIP" has been added to Google Analytics on our website in order to ensure anonymised collection of IP addresses (so-called IP masking).</p><br />
-<p className="font-bold">You Tube</p>
-<p>We use plugins from the YouTube site operated by Google. The operator of the pages is YouTube, LL C, 901 Cherry Ave. San Bruno, CA 94066, USA. When you visit one of our pages equipped with a YouTube plugin, a connection to the YouTube servers is established. The YouTube server is informed which of our pages you have visited. If you are logged into your YouTube account, you enable YouTube to assign your behaviour directly to your personal profile. You can prevent this by logging out of your YouTube account</p><br />
-<p>Further information on the handling of user data can be found in YouTube's privacy policy at: href="http://www.google.de/intl/de/policies/privacy"</p><br />
-<p className='font-bold'>Google Maps</p>
-<br /><p>We use the map service Google Maps on our website. The provider is Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p><br />
-<p>In order to use the functions of Google Maps, it is necessary to save your IP address. This information is usually transmitted to a Google server in the USA and stored there. The provider of this site has no influence on this data transfer.</p><br />
-<p>The basis for the use of Google Maps is Art. 6 para. 1 f GDPR.  As a company, we have an interest in ensuring that our location is easy to find.</p><br />
-<p>Further information on the processing of data when using Google Maps can be found in Google's privacy policy at http://www.google.de/intl/de/policies/privacy/"</p><br />
-<p className="font-bold">Your rights</p>
-<p>You will receive information about the personal data we have stored about you at your request. The provision of information is free of charge for you.</p><br />
-<p>Your right to information includes notification of the processing purposes, the categories of personal data and the recipients or categories of recipients. If possible, I will inform you of the planned storage period or the criteria for determining this period. This includes the right to receive a free copy of the data obtained in a structured, commonly used and machine-readable format, whereby the provision of the copy must not adversely affect the rights and freedoms of others. This includes your right to a direct transfer of the data (right to data portability) to another company, insofar as this is technically possible and legally permissible.</p><br />
-<p>In addition, you have the right to request the rectification of your data. This includes the right to completion (completion of the data record itself; completion by means of a supplementary declaration) of incomplete personal data, taking into account the purposes of the processing. If a correction is necessary, we will inform all recipients of the correction at your request.</p><br />
-<p>You also have the right to have your data deleted. The deletion will take place immediately upon your request. This does not apply to data that must be stored due to legal regulations or that is still required to process the order. Your data will be deleted when the purpose for which it was collected no longer applies or at the end of a statutory retention period. The right to erasure stipulates that we will ensure that the data is also erased by third parties at your request. For this purpose, the third party will be informed of your name (for the purpose of assignment) and the respective request for deletion of all links, copies and replication.</p><br />
-<p>You also have the right to block your personal data stored by us. When blocking, the personal data stored by you is marked in order to restrict its further processing and use. If it is not possible to delete your data due to legal, statutory or contractual retention periods, we will also block your data and inform you of this. If you dispute the accuracy of your data, we will also block it until the accuracy has been finally clarified. If there is reason to assume that your interests worthy of protection will be impaired by the deletion, we will also block the data instead of deleting it.</p><br />
-<p>There is also a right to restriction of processing. This applies if the accuracy of the data stored by us is in question.</p><br />
-<p>You also have the right to object to the processing. You also have the right to lodge a complaint with the supervisory authority. In Bavaria, this is the Bavarian State Office for Data Protection Supervision, Promenade 27,9 1522 Ansbach, telephone 0981 531300, e-mail poststelle@lda.bayern.de. The federal data protection authority with further addresses can be found under this link: https://www.bfdi.bund.de/DE/Home/home_node.html</p><br />
-<p>To exercise your rights, please contact us. Our contact details can be found at the end of this statement.</p><br />
-<p>Changes to our data protection provisions</p><br />
-<p>We reserve the right to amend this privacy policy from time to time to ensure that it always complies with current legal requirements or to implement changes to our services in the privacy policy. For example, when introducing new services. The new privacy policy will then apply to a new visit.</p><br />
-<p>We are the controller within the meaning of the General Data Protection Regulation:</p><br />
-<p>Dr. Wilfried Müller GmbH</p>
-<p>Lechstraße 13 - 15</p>
-<p>86931 Prittriching</p>
-<p>+49 8206 / 96 240</p>
-<p>+ 49 8206 / 96 24 29</p>
-<p>info@med-geraete.de</p>
-<p>www.drwmuellergmbh.de</p>
-
-
+          <p>
+            Wir erheben und verwenden Daten ausschließlich im Einklang mit den
+            Bestimmungen der Datenschutz-Grundverordnung und des neuen
+            Bundesdatenschutzgesetzes. Wir verpflichten uns zur Vertraulichkeit
+            Ihrer personenbezogenen Daten und arbeiten daher innerhalb der
+            gesetzlichen Grenzen. Ihre personenbezogenen Daten werden nur in dem
+            notwendigen Umfang erhoben. Ihre Daten werden nur auf Ihren
+            speziellen Wunsch an Dritte weitergeleitet. Darüber hinaus werden
+            Daten an Dritte weitergeleitet, wenn dies gesetzlich vorgeschrieben
+            ist.
+          </p>
+          <br />
+          <p>
+            Wir erheben nur personenbezogene Daten, die wir für die Abwicklung
+            Ihrer Bestellung oder zur Beantwortung Ihrer Anfrage, zur Erfüllung
+            vertraglicher Verpflichtungen, zur Sicherstellung des Betriebs der
+            Website für erforderlich halten oder für die Sie uns Ihre
+            Einwilligung zur Verarbeitung erteilt haben. Die rechtliche
+            Grundlage ergibt sich aus Art. 6 Abs. 1 a), b), f) DSGVO.
+          </p>
+          <br />
+          <p>
+            Wenn Sie uns Ihre Einwilligung erteilen, erheben wir Daten im von
+            Ihnen genehmigten Umfang. Wenn Sie uns über die angebotenen
+            Kontaktmöglichkeiten kontaktieren, werden Ihre Angaben gespeichert,
+            damit sie verwendet werden können, um Ihre Anfrage zu bearbeiten und
+            zu beantworten.
+          </p>
+          <br />
+          <p>
+            Wenn Sie auf dieser Website einen Beitrag oder Kommentar
+            hinterlassen, wird Ihre IP-Adresse gespeichert. Dies geschieht aus
+            Sicherheitsgründen: Wenn Ihr Text gegen geltendes Recht verstößt,
+            ist es notwendig, Ihre Identität nachvollziehen zu können.
+          </p>
+          <br />
+          <p>
+            Es ist normalerweise möglich, unsere Website ohne Angabe
+            personenbezogener Daten zu nutzen. Wenn solche personenbezogenen
+            Daten auf unserer Website erhoben werden, erfolgt dies, soweit
+            möglich, immer auf freiwilliger Basis. Diese von uns erhobenen Daten
+            werden nicht ohne Ihre ausdrückliche Zustimmung an Dritte
+            weitergegeben.
+          </p>
+          <br />
+          <p>
+            Hiermit möchten wir nochmals darauf hinweisen, dass die
+            Datenübertragung über das Internet, beispielsweise per E-Mail,
+            Sicherheitslücken aufweisen kann. Ein vollständiger Schutz der Daten
+            vor dem Zugriff durch Dritte kann nicht gewährleistet werden.
+          </p>
+          <br />
+          <p>
+            Wir halten uns an die Grundsätze der Datenvermeidung und
+            Datensparsamkeit. Wir speichern daher Ihre personenbezogenen Daten
+            nur so lange, wie es zur Erfüllung der hier genannten Zwecke oder
+            der verschiedenen gesetzlich vorgeschriebenen Speicherfristen
+            erforderlich ist. Sobald der jeweilige Zweck entfällt oder diese
+            Fristen abgelaufen sind, werden die entsprechenden Daten
+            routinemäßig gesperrt oder gemäß den gesetzlichen Vorschriften
+            gelöscht.
+          </p>
+          <br />
+          <p className="font-bold">Erklärung der Begriffe</p>
+          <br />
+          <p>
+            Website umfasst alle einzelnen Webseiten, die wir unter der Domain
+            www.drwmuellergmbh.de bereitstellen.
+          </p>
+          <br />
+          <p>
+            Die DSGVO ist die Verordnung (EU) 2016/679 des Europäischen
+            Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher
+            Personen bei der Verarbeitung personenbezogener Daten und zum freien
+            Datenverkehr sowie zur Aufhebung der Richtlinie 95/46/EG
+            (Datenschutz-Grundverordnung).
+          </p>
+          <br />
+          <p>
+            Gemäß Art. 4 Abs. 1 DSGVO sind personenbezogene Daten alle
+            Informationen, die sich auf eine identifizierte oder
+            identifizierbare natürliche Person beziehen; eine identifizierbare
+            natürliche Person ist eine Person, die direkt oder indirekt
+            identifiziert werden kann, insbesondere durch Bezugnahme auf eine
+            Kennung wie einen Namen, eine Identifikationsnummer, Standortdaten,
+            eine Online-Kennung oder auf einen oder mehrere Faktoren, die
+            spezifisch für die physische, physiologische, genetische,
+            psychische, wirtschaftliche, kulturelle oder soziale Identität
+            dieser natürlichen Person sind.
+          </p>
+          <br />
+          <p>
+            Verarbeitung im Sinne von Art. 4 Abs. 2 DSGVO ist jeder Vorgang oder
+            jede Vorgangsreihe im Zusammenhang mit personenbezogenen Daten,
+            unabhängig davon, ob sie automatisiert durchgeführt wird, wie
+            Erhebung, Erfassung, Organisation, Speicherung, Anpassung oder
+            Veränderung, Auslesen, Abfrage, Verwendung, Offenlegung durch
+            Übermittlung, Verbreitung oder eine andere Form der Bereitstellung,
+            Abgleich oder Verknüpfung, Einschränkung, Löschung oder Vernichtung.
+          </p>
+          <br />
+          <p>
+            Profiling gemäß Art. 4 Abs. 4 DSGVO ist jede Art der automatisierten
+            Verarbeitung personenbezogener Daten, die darin besteht,
+            personenbezogene Daten zu verwenden, um persönliche Aspekte einer
+            natürlichen Person zu bewerten, insbesondere um Aspekte im
+            Zusammenhang mit der Arbeitsleistung, der wirtschaftlichen Lage,
+            Gesundheit, persönlichen Vorlieben, Interessen, Zuverlässigkeit,
+            Verhalten, Aufenthaltsort oder Bewegungen dieser natürlichen Person
+            zu analysieren oder vorherzusagen.
+          </p>
+          <br />
+          <p className="font-bold">Allgemeine Daten</p>
+          <br />
+          <p>
+            Unsere Website erhebt bei jedem Zugriff durch Sie oder ein
+            automatisiertes System eine Reihe von allgemeinen Daten und
+            Informationen. Diese Informationen und Daten werden in den
+            Server-Logfiles gespeichert. Dies kann folgende Informationen
+            umfassen:
+          </p>
+          <br />
+          <p>Browser-System und vom Benutzer verwendete Versionen</p>
+          <br />
+          <p>das vom Benutzer verwendete Betriebssystem</p>
+          <br />
+          <p>
+            die Website, von der aus der Benutzer auf unsere Website gelangt ist
+          </p>
+          <br />
+          <p>die vom Benutzer auf unserer Website aufgerufenen Unterseiten</p>
+          <br />
+          <p>Datum und Uhrzeit des Zugriffs auf unsere jeweilige Website</p>
+          <br />
+          <p>IP-Adresse</p>
+          <br />
+          <p>
+            Internetdienstanbieter, über den der Nutzer die Webseiten aufruft
+          </p>
+          <br />
+          <p>
+            Daten und Informationen für Sicherheitszwecke im Falle von Angriffen
+            auf unser IT-System
+          </p>
+          <br />
+          <p>
+            Wir ziehen aus diesen Daten keine Rückschlüsse auf die betroffene
+            Person. Die Informationen werden ausschließlich für den Betrieb der
+            Website, deren fortlaufende Funktionalität und Optimierung
+            verwendet. Im Falle illegaler Aktivitäten können diese Informationen
+            den Ermittlungsbehörden zur Verfügung gestellt werden. Letztlich
+            helfen uns diese Informationen, den Datenschutz kontinuierlich zu
+            gewährleisten und zu verbessern.
+          </p>
+          <br />
+          <p>
+            Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f) DSGVO.
+            Die Verarbeitung dient unserem berechtigten Interesse am
+            ordnungsgemäßen Betrieb unserer Website.
+          </p>
+          <br />
+          <p className="font-bold">Cookies</p>
+          <br />
+          <p>
+            Unsere Website verwendet teilweise Cookies. Dies sind kleine
+            Textdateien, die auf Ihrem Computer gespeichert werden und die Ihr
+            Browser speichert. Cookies schaden Ihrem Computer nicht und
+            enthalten keine Viren. Cookies werden verwendet, um unsere Website
+            benutzerfreundlicher, effektiver und sicherer zu machen. Einige
+            Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist ein
+            eindeutiger Identifikator des jeweiligen Cookies. Der Bezeichner
+            besteht aus einer Zeichenkette, mit der Webseiten und Server dem
+            spezifischen Internetbrowser zugeordnet werden können, in dem das
+            Cookie gespeichert wurde. Dadurch können die besuchten Webseiten und
+            Server den einzelnen Browser der betroffenen Person von anderen
+            Internetbrowsern, die andere Cookies enthalten, unterscheiden. Der
+            jeweilige Browser kann somit anhand der eindeutigen Cookie-ID
+            erkannt und identifiziert werden.
+          </p>
+          <br />
+          <p>
+            Die meisten der von uns verwendeten Cookies sind sogenannte
+            "Session-Cookies". Sie werden am Ende Ihres Besuchs automatisch
+            gelöscht, während andere Cookies auf Ihrem Endgerät gespeichert
+            bleiben, bis Sie diese löschen. Die Cookies ermöglichen es uns,
+            Ihren Browser beim nächsten Besuch wiederzuerkennen.
+          </p>
+          <br />
+          <p>
+            Natürlich können Sie unsere Website auch ohne den Einsatz von
+            Cookies nutzen. Sie können Ihren Browser so einstellen, dass Sie
+            über die Installation von Cookies informiert werden und diese nur im
+            Einzelfall erlauben. Sie können auch das Akzeptieren von Cookies für
+            bestimmte Fälle oder generell ausschließen. Es ist auch möglich, die
+            automatische Löschung von Cookies beim Schließen des Browsers
+            auszuwählen.
+          </p>
+          <br />
+          <p>
+            Die hierfür erforderlichen Einstellungen in dem von Ihnen
+            verwendeten Internetbrowser finden Sie in der Hilfefunktion Ihres
+            Browsers oder in der Dokumentation des von Ihnen verwendeten
+            Browsers.
+          </p>
+          <br />
+          <p>
+            Wir möchten darauf hinweisen, dass die Ablehnung oder das Anzeigen
+            von Cookies die Funktionalität unserer Website beeinträchtigen kann.
+          </p>
+          <br />
+          <p>
+            Die rechtliche Grundlage für die Verwendung von Cookies ergibt sich
+            aus Art. 6 Abs. 1 lit. f) DSGVO. Wir haben ein berechtigtes
+            Interesse an der Verwendung von Cookies, um eine technisch
+            fehlerfreie und optimierte Website bereitzustellen.
+          </p>
+          <br />
+          <p className="font-bold">Kontaktformular</p>
+          <br />
+          <p>
+            Wenn Sie uns Anfragen über das Kontaktformular senden, werden Ihre
+            Angaben aus dem Formular, einschließlich der dort von Ihnen
+            angegebenen Kontaktdaten, von uns zur Bearbeitung der Anfrage und
+            für den Fall von Anschlussfragen gespeichert. Die Daten umfassen
+            Ihren Nachnamen, Vornamen und Ihre E-Mail-Adresse sowie das Land,
+            aus dem Sie uns schreiben. Optional können Sie auch weitere
+            Informationen wie Ihre Telefonnummer angeben. Wir benötigen diese
+            Informationen, um Ihnen genauere Informationen zu Ihrer Anfrage zur
+            Verfügung zu stellen. Die Grundlage für die Verarbeitung dieser
+            Daten ist Art. 6 Abs. 1 lit. b) DSGVO. Wir geben diese Daten nicht
+            ohne Ihre Einwilligung weiter. Bei der Registrierung werden außerdem
+            die IP-Adresse, die dem Internetdienstanbieter der betroffenen
+            Person zugewiesen wurde, sowie das Datum und die Uhrzeit der
+            Registrierung gespeichert. Nachdem Ihre Anfrage bearbeitet wurde,
+            werden Ihre Daten gelöscht, es sei denn, Sie haben eine Einwilligung
+            zur weiteren Nutzung erteilt oder gesetzliche oder steuerliche
+            Vorschriften verhindern dies.
+          </p>
+          <br />
+          <p className="font-bold">Unser Newsletter</p>
+          <br />
+          <p>
+            Sie haben die Möglichkeit, den Newsletter zu abonnieren. Der
+            Newsletter wird Sie über interessante Produkte und Dienstleistungen
+            informieren. Sie können den Newsletter jederzeit abbestellen. Der
+            entsprechende Link wird Ihnen in jedem einzelnen Newsletter
+            mitgeteilt. Die rechtliche Grundlage für die Verwendung
+            personenbezogener Daten ergibt sich aus Art. 6 Abs. 1 lit. f) DSGVO.
+            Sie können den Newsletter jederzeit abbestellen. Sobald Sie sich
+            abgemeldet haben, werden Ihre Daten im Zusammenhang mit dem
+            Newsletter sofort gelöscht. Unser Newsletter wird über die Firma
+            rapidmail GmbH, Augustinerplatz 2, 79098 Freiburg i.Br., Tel. 0800 -
+            444 6 777, Fax +49 761 582 00 66, E-Mail support@rapidmail.de,
+            verschickt. Weitere Informationen zum Datenschutz bei CreateSend
+            finden Sie unter folgendem Link:
+          </p>
+          <br />
+          <p className="font-bold">Google Analytics</p>
+          <br />
+          <p>
+            Unsere Website verwendet Funktionen des Webanalysedienstes Google
+            Analytics. Dies erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f)
+            DSGVO. Anbieter ist die Google Inc. 1600 Amphitheatre Parkway
+            Mountain View, CA 94043, USA. Im Rahmen von Google Analytics werden
+            auch Cookies verwendet. Dabei handelt es sich um Textdateien, die
+            auf Ihrem Computer gespeichert werden und die eine Analyse der
+            Benutzung der Website durch Sie ermöglichen. Die durch das Cookie
+            erzeugten Informationen über Ihre Benutzung dieser Website werden in
+            der Regel an einen Server von Google in den USA übertragen und dort
+            gespeichert. Dazu gehören der Browsertyp / die Version, das
+            verwendete Betriebssystem, die zuvor besuchte Seite, die IP-Adresse
+            und der Zeitpunkt der Serveranfrage.
+          </p>
+          <br />
+          <p>
+            Die Verarbeitung der Daten im Zusammenhang mit Google Analytics
+            erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f) DSGVO. Als Betreiber
+            unserer Website haben wir ein Interesse daran, das Nutzerverhalten
+            zu analysieren, um sowohl unser Angebot auf unserer Website als auch
+            unsere Werbung zu optimieren. Durch die Nutzung des Internets sind
+            Sie sich der Durchführung solcher Analysen bewusst. Die zur
+            Durchführung der Analyse und Optimierung erhobenen Daten sind für
+            den Nutzer nicht von überwiegendem Wert.
+          </p>
+          <br />
+          <p>
+            Bei aktivierter IP-Anonymisierung wird Ihre IP-Adresse von Google
+            jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in
+            anderen Vertragsstaaten des Abkommens über den Europäischen
+            Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die
+            vollständige IP-Adresse an einen Server von Google in den USA
+            übertragen und dort gekürzt. Im Auftrag des Betreibers dieser
+            Website wird Google diese Informationen verwenden, um Ihre Nutzung
+            der Website auszuwerten, um Berichte über die Websiteaktivitäten
+            zusammenzustellen und um weitere mit der Websitenutzung und der
+            Internetnutzung verbundene Dienstleistungen gegenüber dem
+            Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics
+            von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen
+            Daten von Google zusammengeführt.
+          </p>
+          <br />
+          <p>
+            Sie können die Speicherung der Cookies durch eine entsprechende
+            Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch
+            darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche
+            Funktionen dieser Website vollumfänglich nutzen können. Sie können
+            darüber hinaus die Erfassung der durch das Cookie erzeugten und auf
+            Ihre Nutzung der Website bezogenen Daten (einschließlich Ihrer
+            IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch
+            Google verhindern, indem sie das unter folgendem Link verfügbare
+            Browser-Add-On herunterladen und installieren:
+          </p>
+          <br />
+          <p>
+            Alternativ zum Browser-Add-On gibt es eine weitere Möglichkeit die
+            Erfassung von Daten durch Google Analytics zu verhindern. Dies ist
+            besonders interessant für Nutzer mobiler Geräte. Bitte klicken Sie
+            auf diesen Link: Google Analytics deaktivieren
+          </p>
+          <br />
+          <p>
+            Dadurch wird ein Opt-out-Cookie installiert, das die Erfassung der
+            Daten auf dieser Website verhindert. Die Funktion bleibt bestehen,
+            bis das Cookie gelöscht wird. Wenn das Cookie gelöscht wurde,
+            klicken Sie einfach erneut auf den Link. Weitere Informationen zu
+            den Nutzungsbedingungen und zum Datenschutz finden Sie auf den
+            folgenden Seiten.
+          </p>
+          <br />
+          <p>http://google.com/analytics/terms/de.html</p>
+          <br />
+          <p>http://www.google.de/intl/de/policies/</p>
+          <br />
+          <p>
+            Abschließend möchten wir darauf hinweisen, dass der Code
+            "anonymizeIP" zu Google Analytics auf unserer Website hinzugefügt
+            wurde, um eine anonymisierte Erfassung von IP-Adressen zu
+            gewährleisten (sogenanntes IP-Masking).
+          </p>
+          <br />
+          <p className="font-bold">YouTube</p>
+          <br />
+          <p>
+            Wir verwenden Plugins der von Google betriebenen YouTube-Seite.
+            Betreiber der Seiten ist YouTube, LLC, 901 Cherry Ave. San Bruno, CA
+            94066, USA. Wenn Sie eine unserer mit einem YouTube-Plugin
+            ausgestatteten Seiten besuchen, wird eine Verbindung zu den
+            YouTube-Servern hergestellt. Dem YouTube-Server wird mitgeteilt,
+            welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem
+            YouTube-Konto eingeloggt sind, ermöglichen Sie YouTube, Ihr
+            Verhalten direkt Ihrem persönlichen Profil zuzuordnen. Sie können
+            dies verhindern, indem Sie sich aus Ihrem YouTube-Konto ausloggen.
+          </p>
+          <br />
+          <p>
+            Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der
+            Datenschutzerklärung von YouTube unter:
+            href="http://www.google.de/intl/de/policies/privacy"
+          </p>
+          <br />
+          <p className="font-bold">Google Maps</p>
+          <br />
+          <p>
+            Wir verwenden auf unserer Website den Kartendienst Google Maps.
+            Anbieter ist Google Inc, 1600 Amphitheatre Parkway, Mountain View,
+            CA 94043, USA.
+          </p>
+          <br />
+          <p>
+            Um die Funktionen von Google Maps zu nutzen, ist es notwendig, Ihre
+            IP-Adresse zu speichern. Diese Informationen werden in der Regel an
+            einen Server von Google in den USA übertragen und dort gespeichert.
+            Der Anbieter dieser Seite hat keinen Einfluss auf diese
+            Datenübertragung.
+          </p>
+          <br />
+          <p>
+            Die Grundlage für die Verwendung von Google Maps ist Art. 6 Abs. 1
+            lit. f DSGVO. Als Unternehmen haben wir ein Interesse daran, dass
+            unser Standort leicht zu finden ist.
+          </p>
+          <br />
+          <p>
+            Weitere Informationen zur Datenverarbeitung bei der Nutzung von
+            Google Maps finden Sie in der Datenschutzerklärung von Google unter
+            http://www.google.de/intl/de/policies/privacy/
+          </p>
+          <br />
+          <p className="font-bold">Ihre Rechte</p>
+          <p>
+            Auf Anfrage erhalten Sie Auskunft über die bei uns gespeicherten
+            personenbezogenen Daten. Die Bereitstellung der Auskunft ist für Sie
+            kostenlos.
+          </p>
+          <br />
+          <p>
+            Ihr Auskunftsrecht umfasst die Mitteilung der Verarbeitungszwecke,
+            der Kategorien personenbezogener Daten und der Empfänger oder
+            Kategorien von Empfängern. Soweit möglich, werde ich Sie über die
+            geplante Speicherdauer oder die Kriterien für die Bestimmung dieser
+            Dauer informieren. Dies umfasst das Recht auf Erhalt einer
+            kostenlosen Kopie der erhobenen Daten in einem strukturierten,
+            gängigen und maschinenlesbaren Format, wobei die Bereitstellung der
+            Kopie die Rechte und Freiheiten anderer nicht beeinträchtigen darf.
+            Dies schließt Ihr Recht auf eine direkte Übertragung der Daten
+            (Recht auf Datenübertragbarkeit) an ein anderes Unternehmen ein,
+            sofern dies technisch möglich und rechtlich zulässig ist.
+          </p>
+          <br />
+          <p>
+            Darüber hinaus haben Sie das Recht, die Berichtigung Ihrer Daten zu
+            verlangen. Dies umfasst das Recht auf Vervollständigung
+            (Vervollständigung des Datensatzes selbst; Vervollständigung durch
+            eine ergänzende Erklärung) unvollständiger personenbezogener Daten
+            unter Berücksichtigung der Zwecke der Verarbeitung. Ist eine
+            Berichtigung erforderlich, werden wir auf Ihren Wunsch alle
+            Empfänger von der Berichtigung in Kenntnis setzen.
+          </p>
+          <br />
+          <p>
+            Sie haben ferner das Recht, die Löschung Ihrer Daten zu verlangen.
+            Die Löschung erfolgt unverzüglich auf Ihren Wunsch. Dies gilt nicht
+            für Daten, die aufgrund gesetzlicher Vorschriften gespeichert werden
+            müssen oder die noch zur Abwicklung des Auftrags benötigt werden.
+            Ihre Daten werden gelöscht, wenn der Zweck, für den sie erhoben
+            wurden, nicht mehr gegeben ist oder am Ende einer gesetzlichen
+            Aufbewahrungsfrist. Das Recht auf Löschung bestimmt, dass wir auch
+            Dritte auf Ihren Wunsch hin zur Löschung der Daten veranlassen. Für
+            diesen Zweck wird der Dritte über Ihren Namen (zum Zwecke der
+            Zuordnung) und den jeweiligen Löschungswunsch aller Links, Kopien
+            und Replikationen informiert.
+          </p>
+          <br />
+          <p>
+            Sie haben auch das Recht, Ihre bei uns gespeicherten
+            personenbezogenen Daten sperren zu lassen. Bei der Sperrung werden
+            Ihre gespeicherten personenbezogenen Daten gekennzeichnet, um deren
+            weitere Verarbeitung und Nutzung einzuschränken. Wenn eine Löschung
+            Ihrer Daten aufgrund gesetzlicher, behördlicher oder vertraglicher
+            Aufbewahrungsfristen nicht möglich ist, werden wir Ihre Daten
+            ebenfalls sperren und Sie darüber informieren. Bestreiten Sie die
+            Richtigkeit Ihrer Daten, werden wir diese ebenfalls bis zur
+            abschließenden Klärung der Richtigkeit sperren. Sollte Grund zur
+            Annahme bestehen, dass Ihre schutzwürdigen Interessen durch die
+            Löschung beeinträchtigt werden, so werden wir die Daten statt der
+            Löschung ebenfalls sperren.
+          </p>
+          <br />
+          <p>
+            Es gibt auch ein Recht auf Einschränkung der Verarbeitung. Dies
+            gilt, wenn die Richtigkeit der bei uns gespeicherten Daten in Frage
+            steht.
+          </p>
+          <br />
+          <p>
+            Sie haben ebenfalls das Recht, der Verarbeitung zu widersprechen.
+            Daneben haben Sie das Recht, eine Beschwerde bei der
+            Aufsichtsbehörde einzulegen. In Bayern ist dies das Bayerische
+            Landesamt für Datenschutzaufsicht, Promenade 27, 91522 Ansbach,
+            Telefon 0981 531300, E-Mail poststelle@lda.bayern.de. Die
+            Bundesdatenschutzbehörde mit weiteren Adressen finden Sie unter
+            folgendem Link: https://www.bfdi.bund.de/DE/Home/home_node.html
+          </p>
+          <br />
+          <p>
+            Zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte. Unsere
+            Kontaktdaten finden Sie am Ende dieser Erklärung.
+          </p>
+          <br />
+          <p>Änderungen unserer Datenschutzbestimmungen</p>
+          <br />
+          <p>
+            Wir behalten uns das Recht vor, diese Datenschutzerklärung von Zeit
+            zu Zeit zu ändern, um sicherzustellen, dass sie stets den aktuellen
+            rechtlichen Anforderungen entspricht oder um Änderungen unserer
+            Dienstleistungen in der Datenschutzerklärung umzusetzen. Dies gilt
+            beispielsweise bei der Einführung neuer Services. Die neue
+            Datenschutzerklärung wird dann für einen neuen Besuch gelten.
+          </p>
+          <br />
+          <p>
+            Wir sind der Verantwortliche im Sinne der
+            Datenschutz-Grundverordnung:
+          </p>
+          <br />
+          <p>Dr. Wilfried Müller GmbH</p>
+          <br />
+          <p>Lechstraße 13 - 15</p>
+          <br />
+          <p>86931 Prittriching</p>
+          <br />
+          <p>+49 8206 / 96 240</p>
+          <br />
+          <p>+49 8206 / 96 24 29</p>
+          <br />
+          <p>info@med-geraete.de</p>
+          <br />
+          <p>www.drwmuellergmbh.de</p>
+          <br />
         </div>
         <button
           onClick={onClose}

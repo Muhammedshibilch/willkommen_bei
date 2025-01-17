@@ -27,100 +27,105 @@ const Team = () => {
     <>
       <div className="">
         <div className='img-fluid'>
+
           <img width={'100%'} src="https://www.med-geraete.de/thumbnail/ab/40/32/1657891643/Team_1920x1920.jpg?ts=1657891644" alt="" />
         </div>
-        <div style={{ padding: '0 150px' }} className="bg-teal-300 h-52 flex justify-center items-center">
-          <div className="w-1/2 text-justify mx-4 text-sm">
-            <p>We, the team of Dr. Wilfried Müller GmbH, have been there for our national and international customers since 1998. We are happy to support you in helping people and animals. No challenge is too big for us – whether it's a</p>
-          </div>
-          <div className="w-1/2 text-justify mx-4 text-sm">
-            <p>Whether it's shipping containers with used medical technology to faraway countries or procuring urgently needed spare parts: We are there for you.</p>
-          </div>
-        </div>
-        <div style={{ padding: '0 150px' }} className="bg-sky-700 h-52 flex justify-center items-center">
-          <div className="container py-5">
-            <h1 className="text-teal-300 text-3xl font-bold">This is important to us at our work with used medical equipment</h1>
-          </div>
-          <div className="container py-5">
-            <p className="text-white   ">To be there for our customers, to provide excellent service, to be fair, to deliver high-quality equipment, to make people happy, to pass on our good mood, to work accurately, to provide security, to find solutions, to offer a very good price-performance ratio, to make the world a better place, to help people and animals, to protect the environment, to show appreciation, (to help), to overcome challenges.</p>
-          </div>
-        </div>
+
+       <div style={{ padding: '0 150px' }} className="bg-teal-300 h-52 flex justify-center items-center">
+  <div className="w-1/2 text-justify mx-4 text-sm">
+    <p>Wir, das Team der Dr. Wilfried Müller GmbH, sind seit 1998 für unsere nationalen und internationalen Kunden da. Wir unterstützen Sie gerne dabei, Menschen und Tieren zu helfen. Keine Herausforderung ist uns zu groß – sei es</p>
+  </div>
+  <div className="w-1/2 text-justify mx-4 text-sm">
+    <p>ob es darum geht, Container mit gebrauchter Medizintechnik in ferne Länder zu verschiffen oder dringend benötigte Ersatzteile zu beschaffen: Wir sind für Sie da.</p>
+  </div>
+</div>
+
+<div style={{ padding: '0 150px' }} className="bg-sky-700 h-52 flex justify-center items-center">
+  <div className="container py-5">
+    <h1 className="text-teal-300 text-3xl font-bold">Das ist uns bei der Arbeit mit gebrauchten medizinischen Geräten wichtig</h1>
+  </div>
+  <div className="container py-5">
+    <p className="text-white font-extralight ">Für unsere Kunden da zu sein, exzellenten Service zu bieten, fair zu sein, hochwertige Geräte zu liefern, Menschen glücklich zu machen, unsere gute Laune weiterzugeben, präzise zu arbeiten, Sicherheit zu bieten, Lösungen zu finden, ein sehr gutes Preis-Leistungs-Verhältnis zu bieten, die Welt zu einem besseren Ort zu machen, Menschen und Tieren zu helfen, die Umwelt zu schützen, Wertschätzung zu zeigen, (zu helfen), Herausforderungen zu überwinden.</p>
+  </div>
+</div>
+
+
         {/* dr1 */}
         <div className="d-flex justify-content-center align-items-center mt-5">
-          <div>
-            <h1 className='text-teal-300 text-3xl font-bold'>Marcus Triebel</h1>
-            <p><span className='fw-bolder'>Position</span>:   Managing Director</p>
-            <p><span className='fw-bolder'>How long have you been with the company?</span> Since 1997, Managing <br /> Director since 2012.</p>
-            <p><span className='fw-bolder'>Year of birth</span>: 1974</p>
-          </div>
-          <div className="">
-            <img width={'500px'} src={dr1} alt="" />
-          </div>
-        </div>
+  <div>
+    <h1 className='text-teal-300 text-3xl font-bold'>Marcus Triebel</h1>
+    <p><span className='fw-bolder'>Position</span>: Geschäftsführer</p>
+    <p><span className='fw-bolder'>Wie lange sind Sie schon im Unternehmen?</span> Seit 1997, Geschäftsführer seit 2012.</p>
+    <p><span className='fw-bolder'>Geburtsjahr</span>: 1974</p>
+  </div>
+  <div className="">
+    <img width={'500px'} src={dr1} alt="" />
+  </div>
+</div>
+
         {/* drop */}
-        <div className="bg-stone-300  ">
-          <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
-            <p className='mx-5'>Thanks to his medical training and 25 years of experience in buying and selling used medical technology, Marcus Triebel has comprehensive, in-depth technical knowledge of all the devices on offer. It is particularly important to him to bring used medical technology even more into the focus of the healthcare industry as a valuable resource.</p>
-            <button onClick={() => setOpen(!open)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open} style={{ padding: '5px' }}>
-              <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
-            </button>
-          </div>
-          <Collapse in={open}>
-            <div className='container pb-5' id="example-collapse-text ">
-              <span className='fw-bolder'>  What do you like best about your job at Dr. Wilfried Müller GmbH?</span> The different requirements and multi-layered tasks that I deal with daily. They reflect the wide range of our customers, who come from both human and veterinary medicine. In order to offer our customers the best possible service, I look to empathise with our customers' concerns in very different ways, which gives me great pleasure. Another area that defines my work and that I really enjoy is the assessment and purchasing of technology.
-              <br /><br />
+        <div className="bg-stone-300">
+  <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
+    <p className='mx-5'>Dank seiner medizinischen Ausbildung und 25-jährigen Erfahrung im Kauf und Verkauf gebrauchter Medizintechnik besitzt Marcus Triebel umfassendes, tiefgehendes technisches Wissen über alle angebotenen Geräte. Es ist ihm besonders wichtig, gebrauchte Medizintechnik noch mehr als wertvolle Ressource in den Fokus der Gesundheitsindustrie zu rücken.</p>
+    <button onClick={() => setOpen(!open)}
+      aria-controls="example-collapse-text"
+      aria-expanded={open} style={{ padding: '5px' }}>
+      <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
+    </button>
+  </div>
+  <Collapse in={open}>
+    <div className='container pb-5' id="example-collapse-text">
+      <span className='fw-bolder'>Was gefällt Ihnen an Ihrer Arbeit bei der Dr. Wilfried Müller GmbH am besten?</span> Die unterschiedlichen Anforderungen und vielschichtigen Aufgaben, mit denen ich mich täglich beschäftige. Sie spiegeln die breite Palette unserer Kunden wider, die sowohl aus der Human- als auch der Veterinärmedizin kommen. Um unseren Kunden den bestmöglichen Service zu bieten, versuche ich mich in die Anliegen unserer Kunden in sehr unterschiedlicher Weise hineinzuversetzen, was mir große Freude bereitet. Ein weiterer Bereich, der meine Arbeit prägt und mir viel Spaß macht, ist die Einschätzung und der Einkauf von Technik.
+      <br /><br />
 
+      <span className='fw-bolder'>Warum sind Sie schon so lange bei der Dr. Wilfried Müller GmbH?</span> Bereits in meinen Studienzeiten habe ich hier gearbeitet und mich sehr schnell dazu entschieden, zu bleiben. Der Geschäftsbereich der Dr. Wilfried Müller GmbH ist äußerst interessant – und ich habe eine Vorliebe für technische Produkte. Ich sehe einen Sinn in unserer Arbeit und sie bereitet mir Freude, weil es noch viel zu tun gibt.
+      <br /><br />
 
-              <span className='fw-bolder'>Why have you been with Dr. Wilfried Müller GmbH for such a long time?</span> I was working here back in my student days and decided very quickly to stay. The business area of Dr. Wilfried Müller GmbH is extremely interesting - and I have a penchant for technical products. I see a purpose in our work and I enjoy it because there is still so much to do.  <br /><br />
-
-
-              <span className='fw-bolder'>What for you is the meaning behind your work?</span> I want to show that used medical equipment is a valuable resource. You don't always have to buy something new straight away. With our work, we help to protect the environment by not unnecessarily consuming raw materials for the production of new appliances. Used medical technology can often provide good and safe service for a long time at a good price. Many customers abroad are also dependent on cheaper devices, as are development aid organisations. In Nepal or Cameroon, for example, those responsible often have very little money at their disposal. To them high-quality, used medical equipment is very valuable. We can also use our knowledge to help organisations and sponsors regarding the ideal use of the devices, as there are often special requirements in developing countries, for example due to fluctuating power supplies.
-              <br /><br />
-              <span className='fw-bolder'>What are the 3 top features of your position?</span> A lot of design options, versatility, making a contribution to protecting the environment and conserving resources.
-            </div>
-          </Collapse>
-        </div>
+      <span className='fw-bolder'>Was bedeutet Ihnen Ihre Arbeit?</span> Ich möchte zeigen, dass gebrauchte Medizintechnik eine wertvolle Ressource ist. Man muss nicht immer gleich etwas Neues kaufen. Mit unserer Arbeit tragen wir dazu bei, die Umwelt zu schützen, indem wir nicht unnötig Rohstoffe für die Herstellung neuer Geräte verbrauchen. Gebrauchte Medizintechnik kann oft langfristig gute und sichere Dienste zu einem guten Preis leisten. Viele Kunden im Ausland sind zudem auf günstigere Geräte angewiesen, ebenso Entwicklungsorganisationen. In Nepal oder Kamerun beispielsweise haben die Verantwortlichen oft nur sehr begrenzte finanzielle Mittel. Für sie sind hochwertige, gebrauchte Medizintechnik sehr wertvoll. Wir können unser Wissen auch dazu nutzen, Organisationen und Förderern beim optimalen Einsatz der Geräte zu helfen, da in Entwicklungsländern oft besondere Anforderungen bestehen, zum Beispiel aufgrund von schwankenden Stromversorgungen.
+      <br /><br />
+      <span className='fw-bolder'>Was sind die 3 wichtigsten Eigenschaften Ihrer Position?</span> Viele Gestaltungsmöglichkeiten, Vielseitigkeit, Beitrag zum Schutz der Umwelt und zur Ressourcenschonung.
+    </div>
+  </Collapse>
+</div>
 
 
         {/* dr2 */}
         <div className="d-flex justify-content-center align-items-center mt-5">
-          <div className="">
-            <img width={'500px'} src={dr2} alt="" />
-          </div>
-          <div>
-            <h1 className='text-teal-300 text-3xl font-bold'>Carolin Junger</h1>
-            <p><span className='fw-bolder'>Position</span>: Sales Assistant Purchasing and Sales.</p>
-            <p><span className='fw-bolder'>How long have you been with the company? </span> Since 2002 .</p>
-            <p><span className='fw-bolder'>Education: </span> Industrial administrator.</p>
-            <p><span className='fw-bolder'>Year of birth</span>: 1978</p>
-          </div>
+  <div className="">
+    <img width={'500px'} src={dr2} alt="" />
+  </div>
+  <div>
+    <h1 className='text-teal-300 text-3xl font-bold'>Carolin Junger</h1>
+    <p><span className='fw-bolder'>Position</span>: Vertriebsassistentin Einkauf und Verkauf.</p>
+    <p><span className='fw-bolder'>Wie lange sind Sie schon im Unternehmen?</span> Seit 2002.</p>
+    <p><span className='fw-bolder'>Ausbildung:</span> Industriekauffrau.</p>
+    <p><span className='fw-bolder'>Geburtsjahr</span>: 1978</p>
+  </div>
+</div>
 
-        </div>
+
         {/* drop */}
-        <div className="bg-sky-700 text-white  ">
-          <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
-            <p className='mx-5 py-4'><span className='fw-bolder'>What do you like best about your job at Dr. Wilfried Müller GmbH?</span> It is very varied, I work independently with pleasant colleagues, and my opinion matters. I feel very valued here and have the feeling that I am an important part of the company. My work here is like my family, it fulfils me, and gives me satisfaction. My favourite thing is when customers don't know how to do something, e.g., ship something, and I am able to help them with that so that everyone is happy in the end.</p>
-            <button onClick={() => setOpen2(!open2)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open2} style={{ padding: '5px' }}>
-              <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
-            </button>
-          </div>
-          <Collapse in={open2}>
-            <div className='container pb-5' id="example-collapse-text ">
-              I'm also pleased that my coworkers here have all been with us for so long, there are hardly any changes because everyone is happy. We have a good workplace environment. And the sustainability that we practise and support here is something that I live by not only at work, but also in my private life, because I think it's a very important issue.
-              <br /><br />
+        <div className="bg-sky-700 text-white">
+  <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
+    <p className='mx-5 py-4'><span className='fw-bolder'>Was gefällt Ihnen an Ihrer Arbeit bei der Dr. Wilfried Müller GmbH am besten?</span> Es ist sehr abwechslungsreich, ich arbeite selbstständig mit angenehmen Kollegen und meine Meinung zählt. Ich fühle mich hier sehr wertgeschätzt und habe das Gefühl, ein wichtiger Teil des Unternehmens zu sein. Meine Arbeit hier ist wie meine Familie, sie erfüllt mich und gibt mir Zufriedenheit. Am liebsten helfe ich Kunden, wenn sie nicht wissen, wie sie etwas machen sollen, z.B. etwas verschicken, sodass am Ende alle glücklich sind.</p>
+    <button onClick={() => setOpen2(!open2)}
+      aria-controls="example-collapse-text"
+      aria-expanded={open2} style={{ padding: '5px' }}>
+      <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
+    </button>
+  </div>
+  <Collapse in={open2}>
+    <div className='container pb-5' id="example-collapse-text">
+      Ich freue mich auch, dass meine Kollegen hier alle schon so lange bei uns sind, es gibt kaum Veränderungen, weil alle zufrieden sind. Wir haben ein gutes Arbeitsumfeld. Und die Nachhaltigkeit, die wir hier praktizieren und unterstützen, lebe ich nicht nur bei der Arbeit, sondern auch privat, weil ich sie für sehr wichtig halte.
+      <br /><br />
 
+      <span className='fw-bolder'>Was bedeutet Ihnen Ihre Arbeit?</span> Es ist mir wichtig, unseren Kunden den bestmöglichen Service zu bieten. Ich möchte ihnen helfen und mich wirklich um sie kümmern, denn für mich sind unsere Kunden weit mehr als nur zahlende Klienten. Sie sind Menschen, die anderen helfen wollen, und ich möchte sie dabei unterstützen. Meine Aufgabe besteht darin, Lieferketten aufrechtzuerhalten und unseren Kunden ein gutes und komfortables Arbeiten zu ermöglichen.
+      <br /><br />
+      <span className='fw-bolder'>Ihre 3 Lieblingstätigkeiten?</span> Service bieten, Kundenkontakt, Verwaltung und Mitarbeiterführung.
+    </div>
+  </Collapse>
+</div>
 
-              <span className='fw-bolder'>What for you is the meaning behind your work?</span> It is important to me to provide our customers with the best possible service. I want to help them and really take care of them, because for me our customers are much more than just paying clients. They are people who want to help others and I want to support them in this. My job is to maintain supply chains and enable our customers to work well and comfortably.
-
-              <br /><br />
-              <span className='fw-bolder'> Your 3 favourite activities?</span> Providing service, customer contact, administration and employee management.
-            </div>
-          </Collapse>
-        </div>
 
 
 
@@ -130,129 +135,136 @@ const Team = () => {
         {/* dr3 */}
         <div className="d-flex justify-content-center align-items-center mt-5">
           
-          <div>
-            <h1 className='text-teal-300 text-3xl font-bold'>Siegfried Weißenbach</h1>
-            <p><span className='fw-bolder'>Anaesthesia technician, ventilation and anaesthesia field </span> </p>
-            <p><span className='fw-bolder'>How long have you been with the company? since 2002 </span>  </p>
-            <p><span className='fw-bolder'>Education: </span>   Electrician/information electronics technician, medical <br /> technician, distance learning industrial master craftsman in <br /> communications engineering</p>
-            <p><span className='fw-bolder'>Year of birth</span>: 1967</p>
-          </div>
+        <div>
+  <h1 className='text-teal-300 text-3xl font-bold'>Siegfried Weißenbach</h1>
+  <p><span className='fw-bolder'>Anästhesietechniker, Bereich Beatmung und Anästhesie</span></p>
+  <p><span className='fw-bolder'>Wie lange sind Sie schon im Unternehmen?</span> Seit 2002</p>
+  <p><span className='fw-bolder'>Ausbildung:</span> Elektriker/Informationselektroniker, Medizintechniker, Fernstudium zum <br /> Industriemeister in der Kommunikationstechnik</p>
+  <p><span class="fw-bolder">Geburtsjahr:</span> 1967</p>
+</div>
+
           <div className="">
             <img width={'500px'} src={dr3} alt="" />
           </div>
 
         </div>
         {/* drop */}
-        <div className="bg-sky-700 text-white  ">
-          <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
-            <p className='mx-5 py-4'><span className='fw-bolder'>What is your job as an anaesthesia technician at Dr. Wilfried Müller GmbH?</span>I repair respiratory and anaesthesia equipment for human and veterinary medicine and assemble them according to customer requirements. I check them precisely in accordance with the statutory safety (maintenance) regulations.</p>
-            <button onClick={() => setOpen3(!open3)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open3} style={{ padding: '5px' }}>
-              <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
-            </button>
-          </div>
-          <Collapse in={open3}>
-            <div className='container pb-5' id="example-collapse-text ">
-              My appliances go out in top condition, sometimes they undergo hours of testing. Because before anything leaves our premises, it has to function 100 percent safely. <br />
+        <div className="bg-sky-700 text-white">
+  <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
+    <p className='mx-5 py-4'><span className='fw-bolder'>Was ist Ihre Aufgabe als Anästhesietechniker bei der Dr. Wilfried Müller GmbH?</span> Ich repariere Beatmungs- und Anästhesiegeräte für die Human- und Veterinärmedizin und baue sie nach Kundenwunsch zusammen. Ich prüfe sie genau nach den gesetzlichen Sicherheitsvorschriften (Wartung).</p>
+    <button onClick={() => setOpen3(!open3)}
+      aria-controls="example-collapse-text"
+      aria-expanded={open3} style={{ padding: '5px' }}>
+      <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
+    </button>
+  </div>
+  <Collapse in={open3}>
+    <div className='container pb-5' id="example-collapse-text">
+      Meine Geräte verlassen unser Werk in einwandfreiem Zustand, manchmal unterziehen sie sich stundenlangen Tests. Denn bevor irgendetwas unsere Räumlichkeiten verlässt, muss es zu 100 Prozent sicher funktionieren.
+      <br />
 
-
-
-              I would let myself be treated at any time with the devices that I have tested myself. <br />
-              As an expert in anaesthesia and respiratory equipment with 22 years of professional experience at Großhadern Clinic. I also provide telephone support for customers, as even well-trained technicians are often no longer familiar with older equipment. Enquiries come from all over the world. I also give instructions on devices that are used in developing countries. <br />
-              What do you like best about your job at Dr. Wilfried Müller GmbH? The work is very varied, it's never the same and you always learn something new. The working atmosphere here is very good. I like going to work, we help each other and we know each other. <br />
-              What is important to you in your work? It's important to me that it's fun and that I have a sense of achievement. If I can say: “Today I saved another high-quality device from the scrap heap”, then I'm satisfied. We are really doing something for the environment here. Even if a device is 50 years old, such as Zeiss microscopes, we strive to maintain it for a long time to come. Because we are well networked, we can even procure original parts that the manufacturers no longer offer. We then make a circular call among our numerous contacts to service technicians and dealers to find the spare part we are looking for, and we usually succeed. <br />
-              What do you wish for the future of the medical technology/industry? It should not be too complicated, neither technically nor in terms of regulations. I would also like to see medical facilities and surgeries have multiple PC-supported devices because failures can occur at any time.
-
-              <br /><br />
-              <span className='fw-bolder'> Your 3 favourite activities?</span> Providing service, customer contact, administration and employee management.
-            </div>
-          </Collapse>
-        </div>
+      Ich würde mich jederzeit mit den Geräten behandeln lassen, die ich selbst getestet habe.
+      <br />
+      Als Experte für Anästhesie- und Beatmungsgeräte mit 22-jähriger Berufserfahrung an der Klinik Großhadern biete ich auch telefonischen Support für Kunden, da auch gut ausgebildeten Technikern oft der Umgang mit älteren Geräten nicht mehr geläufig ist. Anfragen kommen aus der ganzen Welt. Ich gebe auch Anweisungen zu Geräten, die in Entwicklungsländern eingesetzt werden.
+      <br />
+      Was gefällt Ihnen an Ihrer Arbeit bei der Dr. Wilfried Müller GmbH am besten? Die Arbeit ist sehr abwechslungsreich, sie ist nie gleich und man lernt immer etwas Neues dazu. Das Arbeitsklima hier ist sehr gut. Ich gehe gerne zur Arbeit, wir helfen uns gegenseitig und kennen uns untereinander.
+      <br />
+      Was ist Ihnen bei Ihrer Arbeit wichtig? Es ist mir wichtig, dass sie Spaß macht und ich ein Erfolgserlebnis habe. Wenn ich sagen kann: „Heute habe ich wieder ein hochwertiges Gerät vor dem Schrott gerettet“, dann bin ich zufrieden. Wir tun wirklich etwas für die Umwelt hier. Auch wenn ein Gerät 50 Jahre alt ist, wie z.B. Zeiss-Mikroskope, bemühen wir uns, es noch lange zu erhalten. Da wir gut vernetzt sind, können wir sogar Originalteile beschaffen, die die Hersteller nicht mehr anbieten. Wir machen dann einen Rundruf bei unseren zahlreichen Kontakten zu Servicetechnikern und Händlern, um das gesuchte Ersatzteil zu finden, und haben meist Erfolg.
+      <br />
+      Was wünschen Sie sich für die Zukunft der Medizintechnik/Branche? Sie sollte nicht zu kompliziert sein, weder technisch noch in Bezug auf Vorschriften. Ich wünsche mir auch, dass medizinische Einrichtungen und Praxen mehrfach PC-unterstützte Geräte haben, da Ausfälle jederzeit auftreten können.
+      <br /><br />
+      <span className='fw-bolder'>Ihre 3 Lieblingstätigkeiten?</span> Service bieten, Kundenkontakt, Verwaltung und Mitarbeiterführung.
+    </div>
+  </Collapse>
+</div>
 
 
 
         {/* dr4 */}
         <div className="d-flex justify-content-center align-items-center mt-5">
-          <div className="">
-            <img width={'500px'} src={dr4} alt="" />
-          </div>
-          <div>
-            <h1 className='text-teal-300 text-3xl font-bold'>Raimund Hilz</h1>
-            <p><span className='fw-bolder'>Position</span>: Workshop manager   </p>
-            <p><span className='fw-bolder'>How long have you been with the company? since 2010 </span>  </p>
-            <p><span className='fw-bolder'>Education: </span>  Electrician and precision mechanic.</p>
-            <p><span className='fw-bolder'>Year of birth</span>: 1957</p>
-          </div>
+  <div className="">
+    <img width={'500px'} src={dr4} alt="" />
+  </div>
+  <div>
+    <h1 className='text-teal-300 text-3xl font-bold'>Raimund Hilz</h1>
+    <p><span className='fw-bolder'>Position:</span> Werkstattleiter</p>
+    <p><span className='fw-bolder'>Wie lange sind Sie schon im Unternehmen?</span> Seit 2010</p>
+    <p><span className='fw-bolder'>Ausbildung:</span> Elektriker und Feinmechaniker.</p>
+    <p><span className='fw-bolder'>Geburtsjahr:</span> 1957</p>
+  </div>
+</div>
 
-        </div>
         {/* drop */}
-        <div className="bg-stone-300   ">
-          <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
-            <p className='mx-5 py-4'><span className='fw-bolder'>What is your job as an anaesthesia technician at Dr. Wilfried Müller GmbH?</span> That I can work freely and without constraints. We have a good atmosphere and good colleagues here, it's just fun and the work is extremely varied. You come into contact with so many things that you otherwise only know of from afar and never stop learning.</p>
-            <button onClick={() => setOpen4(!open4)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open4} style={{ padding: '5px' }}>
-              <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
-            </button>
-          </div>
-          <Collapse in={open4}>
-            <div className='container pb-5' id="example-collapse-text ">
-              Each of us has our own area of expertise and if a problem arises, I am asked to help. I take care of things when someone is stuck and maintain an overview. We go into a lot of detail here and I look again at things very closely. For example, we repair circuit boards that have not been available for years, which requires a high level of expertise. I also have an extensive stock of spare parts in my private life, because electronics is my hobby. <br />
-              <br />
-              <span className='fw-bolder'> What does a typical working day / your work look like? </span>My speciality here is high-frequency surgical equipment, surgical microscopes, and more difficult electronic repairs. This is a very specialised area, as it involves the repair of appliances that are somewhat older. Young people are no longer able to do this because some of them don't even know the components. You have to have grown up with the technology of the time to understand it. <br /> <br />
-              <span className='fw-bolder'>What is important to you in your work?</span> What matters? That it is repaired properly and sensibly. I am not a friend of half measures. Either a repair is a sensible repair or I leave it alone. I make no compromises when it comes to quality and safety.
-              <br /><br />
-              <span className='fw-bolder'>What do you achieve with your work?</span> I'm not in favour of throwing away every broken appliance, but much more in favour of keeping them in good condition. For repairs that many companies or manufacturers no longer do, you need a very high level of knowledge across the board. Manufacturers often turn our customers away while we can still help them. <br /> <br />
-             <span className='fw-bolder'> What are the 3 top features in your job?</span> Self-determination in my methods, personal responsibility, job satisfaction. It all fits together, I can combine my hobby with my job, do good and pass on my expertise.
+        <div className="bg-stone-300">
+  <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
+    <p className='mx-5 py-4'><span className='fw-bolder'>Was ist Ihre Aufgabe als Anästhesietechniker bei der Dr. Wilfried Müller GmbH?</span> Dass ich frei und ohne Einschränkungen arbeiten kann. Wir haben hier eine gute Atmosphäre und gute Kollegen, es macht einfach Spaß und die Arbeit ist äußerst abwechslungsreich. Man kommt mit so vielen Dingen in Kontakt, die man sonst nur aus der Ferne kennt, und lernt nie aus.</p>
+    <button onClick={() => setOpen4(!open4)}
+      aria-controls="example-collapse-text"
+      aria-expanded={open4} style={{ padding: '5px' }}>
+      <img src={plus} alt="Plus Icon" style={{ width: '100%', height: '100%' }} />
+    </button>
+  </div>
+  <Collapse in={open4}>
+    <div className='container pb-5' id="example-collapse-text">
+      Jeder von uns hat sein eigenes Fachgebiet und wenn ein Problem auftaucht, werde ich um Hilfe gebeten. Ich kümmere mich um Dinge, wenn jemand nicht weiterkommt, und behalte den Überblick. Wir gehen hier sehr ins Detail und ich schaue mir die Dinge noch einmal ganz genau an. Beispielweise reparieren wir Platinen, die seit Jahren nicht mehr erhältlich sind, was ein hohes Maß an Fachwissen erfordert. Ich habe auch privat einen umfangreichen Ersatzteilbestand, weil Elektronik mein Hobby ist.
+      <br /><br />
+      <span className='fw-bolder'>Wie sieht ein typischer Arbeitstag bei Ihnen aus?</span> Meine Spezialität hier sind hochfrequente chirurgische Geräte, Operationsmikroskope und schwierige elektronische Reparaturen. Dies ist ein sehr spezialisiertes Gebiet, da es die Reparatur etwas älterer Geräte betrifft. Junge Leute können das oft nicht mehr, weil sie die Komponenten gar nicht kennen. Man muss mit der Technologie der damaligen Zeit aufgewachsen sein, um sie zu verstehen.
+      <br /><br />
+      <span className='fw-bolder'>Was ist Ihnen bei Ihrer Arbeit wichtig?</span> Was zählt? Dass es richtig und sinnvoll repariert wird. Ich bin kein Freund von halben Sachen. Entweder ist eine Reparatur sinnvoll, oder ich lasse es sein. Bei Qualität und Sicherheit mache ich keine Kompromisse.
+      <br /><br />
+      <span className='fw-bolder'>Was erreichen Sie mit Ihrer Arbeit?</span> Ich bin kein Befürworter davon, jedes defekte Gerät wegzuwerfen, sondern eher dafür, sie in gutem Zustand zu halten. Für Reparaturen, die viele Firmen oder Hersteller nicht mehr durchführen, benötigt man ein sehr hohes, breit gefächertes Wissen. Hersteller lehnen unsere Kunden oft ab, während wir ihnen noch helfen können.
+      <br /><br />
+      <span className='fw-bolder'>Was sind die 3 wichtigsten Eigenschaften Ihres Berufs?</span> Selbstbestimmung in meinen Methoden, Eigenverantwortung, Arbeitszufriedenheit. Es passt alles zusammen, ich kann mein Hobby mit meiner Arbeit verbinden, Gutes tun und mein Fachwissen weitergeben.
+    </div>
+  </Collapse>
+</div>
 
-             </div>
-          </Collapse>
-        </div>
+
 
 
 
 
         {/* dr5 */}
         <div className="d-flex justify-content-center align-items-center mt-5">
-         
-          <div>
-            <h1 className='text-teal-300 text-3xl font-bold'>Manfred Gebele</h1>
-            <p><span className='fw-bolder'>Medical technician </span>  </p>
-            <p><span className='fw-bolder'>How long have you been with the company? since 2014 </span>  </p>
-            <p><span className='fw-bolder'>Education: </span>   Electrical system installer / energy system electronics <br /> technician with further training as a medical technician</p>
-            <p><span className='fw-bolder'>Year of birth</span>: 1968</p>
-          </div>
-          <div className="">
-            <img width={'500px'} src={dr5} alt="" />
-          </div>
+  <div>
+    <h1 className='text-teal-300 text-3xl font-bold'>Manfred Gebele</h1>
+    <p><span className='fw-bolder'>Position:</span> Medizintechniker</p>
+    <p><span className='fw-bolder'>Wie lange sind Sie schon im Unternehmen?</span> Seit 2014</p>
+    <p><span className='fw-bolder'>Ausbildung:</span> Elektroinstallateur für Systeme / <br /> Energieanlagenelektroniker mit Weiterbildung zum Medizintechniker</p>
+    <p><span className='fw-bolder'>Geburtsjahr:</span> 1968</p>
+  </div>
+  <div className="">
+    <img width={'500px'} src={dr5} alt="" />
+  </div>
+</div>
 
-        </div>
         {/* drop */}
-        <div className="bg-sky-700 text-white  ">
-          <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
-            <p className='mx-5 py-4'><span className='fw-bolder'>What is your job as an anaesthesia technician at Dr. Wilfried Müller GmbH?</span>  I particularly like the great relationship with my colleagues and the fact that my work helps people.</p>
-            <button onClick={() => setOpen5(!open5)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open5} style={{ padding: '5px' }}>
-              <img src={plus} alt="Plus Icon" style={{ width: '200px'  }} />
-            </button>
-          </div>
-          <Collapse in={open5}>
-            <div className='container pb-5' id="example-collapse-text ">
-            This gives me a sense completeness and harmony. I've been in service my whole life. Customers often come to us who have been rejected by the seller or manufacturer and we then find a solution to their problem. <br />
-              <br />
-              <span className='fw-bolder'> What does a typical working day / your work look like? </span>I work on customer repairs, check and finish devices that have been sold – all types except ventilation and optics, e.g., I take care of infusion and syringe pumps, ECG monitors, anaesthetic gas monitors, defibrillators. Customers often call and say "my device is doing this or that, how can I fix it?" and then we go through it step by step together. If we know the device, we are happy to help, even if the enquiry comes from companies that are not yet customers of ours. <br /> <br />
-              <span className='fw-bolder'>What is important to you in your work? What matters? </span>  It is important to adhere to the manufacturer's specifications, which is where accuracy comes in. You go through a checklist, according to which, for example, you have to check whether the housing is in order, take a close look at the cables and adjust the limit values. This is all done with the aid of a calibrated test case with a very small tolerance.
-              <br /><br />
-              Maintaining and refurbishing used medical technology is very sustainable: The appliance does not have to be disposed of and a new one does not have to be built using new resources. This helps the environment and customers benefit from more cheaper prices, because if a new appliance costs, say, 20,000 euros, a used one can cost 2,500 euros and also be more robustly built. Older mechanical devices are almost indestructible. German customers appreciate this reliability just as much as international customers.
-             <span className='fw-bolder'> What do you achieve with your work?</span> I am fighting against the throwaway mentality. It is unacceptable that appliances today are designed in such a way that they are thrown away after five years when they could just as easily be used for many more decades. Older mechanical devices prove this: In contrast to more high-tech appliances, they are usually incredibly robust and durable.
-              <br /><br />
-             <span className='fw-bolder'> What do you wish for the future of the medical technology/industry?</span> A higher and more durable quality. Many appliances still work technically, but they have to be thrown away because the plastic is porous, for example. I recently had a real moment of shock with an appliance from 2016/2018 that literally crumbled apart. It used to be different. Back then, manufacturers were still proud to offer spare parts for 20 years – for their long-lasting appliances.
-             </div>
-          </Collapse>
-        </div>
-
+        <div className="bg-sky-700 text-white">
+  <div style={{ padding: '0 50px' }} className="container d-flex align-items-center text-justify">
+    <p className='mx-5 py-4'><span className='fw-bolder'>Was ist Ihre Aufgabe als Anästhesietechniker bei der Dr. Wilfried Müller GmbH?</span> Mir gefällt besonders das großartige Verhältnis zu meinen Kollegen und die Tatsache, dass meine Arbeit Menschen hilft.</p>
+    <button onClick={() => setOpen5(!open5)}
+      aria-controls="example-collapse-text"
+      aria-expanded={open5} style={{ padding: '5px' }}>
+      <img src={plus} alt="Plus Icon" style={{ width: '200px' }} />
+    </button>
+  </div>
+  <Collapse in={open5}>
+    <div className='container pb-5' id="example-collapse-text">
+      Das gibt mir ein Gefühl von Vollständigkeit und Harmonie. Ich bin mein ganzes Leben lang im Dienst. Kunden kommen oft zu uns, die vom Verkäufer oder Hersteller abgelehnt wurden, und wir finden dann eine Lösung für ihr Problem.
+      <br />
+      <br />
+      <span className='fw-bolder'>Wie sieht ein typischer Arbeitstag bei Ihnen aus?</span> Ich arbeite an Kundenreparaturen, überprüfe und fertige Geräte, die verkauft wurden – alle Arten außer Beatmung und Optik, z. B. kümmere ich mich um Infusions- und Spritzenpumpen, EKG-Monitore, Anästhesiegas-Monitore, Defibrillatoren. Kunden rufen oft an und sagen "mein Gerät macht dies oder das, wie kann ich es reparieren?" und dann gehen wir es Schritt für Schritt gemeinsam durch. Wenn wir das Gerät kennen, helfen wir gerne, auch wenn die Anfrage von Unternehmen kommt, die noch keine Kunden von uns sind.
+      <br /><br />
+      <span className='fw-bolder'>Was ist Ihnen bei Ihrer Arbeit wichtig? Was zählt?</span> Es ist wichtig, sich an die Vorgaben des Herstellers zu halten, dabei kommt es auf Genauigkeit an. Man geht eine Checkliste durch, nach der man beispielsweise prüfen muss, ob das Gehäuse in Ordnung ist, die Kabel genau betrachten und die Grenzwerte einstellen. Dies geschieht alles mit Hilfe eines kalibrierten Prüfkoffers mit sehr geringer Toleranz.
+      <br /><br />
+      Das Warten und Aufarbeiten von gebrauchter Medizintechnik ist sehr nachhaltig: Das Gerät muss nicht entsorgt werden und ein neues muss nicht mit neuen Ressourcen gebaut werden. Dies hilft der Umwelt und die Kunden profitieren von günstigeren Preisen, denn wenn ein neues Gerät beispielsweise 20.000 Euro kostet, kann ein gebrauchtes 2.500 Euro kosten und auch robuster gebaut sein. Ältere mechanische Geräte sind fast unzerstörbar. Deutsche Kunden schätzen diese Zuverlässigkeit genauso wie internationale Kunden.
+      <br /><br />
+      <span className='fw-bolder'>Was ist das Ergebnis Ihrer Arbeit?</span> Ich kämpfe gegen die Wegwerfmentalität an. Es ist inakzeptabel, dass Geräte heute so konzipiert sind, dass sie nach fünf Jahren weggeworfen werden, wenn sie genauso gut noch viele Jahrzehnte genutzt werden könnten. Ältere mechanische Geräte beweisen dies: Im Gegensatz zu High-Tech-Geräten sind sie meist unglaublich robust und langlebig.
+      <br /><br />
+      <span className='fw-bolder'>Was wünschen Sie sich für die Zukunft der Medizintechnik/Branche?</span> Eine höhere und langlebigere Qualität. Viele Geräte funktionieren technisch noch einwandfrei, müssen aber weggeworfen werden, weil das Kunststoff beispielsweise porös ist. Ich hatte kürzlich einen echten Schreckmoment mit einem Gerät aus den Jahren 2016/2018, das buchstäblich zerbröckelte. Früher war das anders. Damals waren die Hersteller noch stolz darauf, Ersatzteile für 20 Jahre anzubieten – für ihre langlebigen Geräte.
+    </div>
+  </Collapse>
+</div>
 
 
 
