@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Toastify } from "toastify";
 
-const Modal = ({ closeModal }) => {
+const Modal = ({ closeModal, selectedProduct }) => {
   const [formData, setFormData] = useState({
     name: "",
     emailId: "",
     phoneNumber: "",
     price: "",
+    model: ""
   });
+
+  useEffect(() => {
+    if (selectedProduct) {
+      setFormData((prevData) => ({
+        ...prevData,
+        model: selectedProduct.modelName || "",
+        price: selectedProduct.price || ""
+      }));
+    }
+  }, [selectedProduct]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,7 +41,7 @@ const Modal = ({ closeModal }) => {
       closeModal();
     } catch (error) {
       console.error("Fehler beim Einreichen der Anfrage:", error);
-      toast.error(
+      alert(
         "Anfrage konnte nicht eingereicht werden. Bitte versuchen Sie es erneut."
       );
     }
@@ -42,7 +52,7 @@ const Modal = ({ closeModal }) => {
       <div className="bg-white p-6 rounded-lg shadow-lg w-1/2">
         <h2 className="text-xl font-bold mb-4">Anfrageformular</h2>
         <form onSubmit={handleSubmit}>
-          {["name", "emailId", "phoneNumber", "price", "model"].map((field) => (
+          {["Name", "E-Mail-Adresse", "Telefonnummer", "price", "model"].map((field) => (
             <div className="mb-4" key={field}>
               <label className="block text-sm font-bold mb-2 capitalize">
                 {field}
@@ -55,6 +65,7 @@ const Modal = ({ closeModal }) => {
                 value={formData[field]}
                 onChange={handleChange}
                 required
+                readOnly={field === "model" || field === "price"}
               />
             </div>
           ))}

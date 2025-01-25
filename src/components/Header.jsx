@@ -215,9 +215,9 @@ const Header = () => {
             <Link to="/Downloads" className="text-gray-600">
               Downloads
             </Link>
-            <Link to="/contact" className="text-gray-600">
+            {/* <Link to="/contact" className="text-gray-600">
               Kontakt
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </header>

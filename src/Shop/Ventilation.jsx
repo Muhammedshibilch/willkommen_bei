@@ -4,21 +4,49 @@ import Modal from "../components/Modal";
 
 const Ventilation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Sorting");
-  const [isModalOpen, setIsModalOpen] = useState(false);
+   const [selectedOption, setSelectedOption] = useState("Sorting");
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [selectedProduct, setSelectedProduct] = useState({});
+ 
+   const handleChange = (event) => {
+     setSelectedOption(event.target.value);
+     setIsOpen(false); // Close the dropdown after selecting an option
+   };
+ 
+   const openModal = (product) => {
+     setSelectedProduct(product);
+     setIsModalOpen(true);
+   };
+ 
+   const closeModal = () => {
+     setIsModalOpen(false);
+     setSelectedProduct({});
+   };
 
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
-    setIsOpen(false); // Close the dropdown after selecting an option
-  };
+  const products = [
+    {
+      modelName: "DRÄGER 5704281 Wall bracket for Oxylog 2000plus",
+      imageUrl: "https://www.med-geraete.de/thumbnail/81/4a/0e/1698301731/1005211_400x400.jpeg?ts=1726126223",
+      productNumber: "1005211",
+      description: "DRÄGER 5704281 Wall bracket for Oxylog 2000plus Second-hand",
+      price: "€245.00*"
+    },
+    {
+      modelName: "DRÄGER Evita Infinity V500 Intensive care ventilator",
+      imageUrl: "https://www.med-geraete.de/thumbnail/e0/a8/dd/1698301820/1005245_e0a8dd009c2ad43a4cff02da1bfbfdda_800x800.jpeg?ts=1726126240",
+      productNumber: "1005245",
+      description: "DRÄGER Evita Infinity V500 Intensive care ventilator for adults, children and",
+      price: "€9,500.00*"
+    },
+    {
+      modelName: "DRÄGER Secretion bottle package",
+      imageUrl: "https://www.med-geraete.de/thumbnail/0f/34/8c/1698134808/1000867a_0f348c2b31573f6022a365b2ba9c37f9_400x400.jpeg?ts=1726040907",
+      productNumber: "1000867",
+      description: "DRÄGER secretion bottle package consisting of carrying frame, 2x",
+      price: "€125.00*"
+    }
+  ]
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   return (
     <>
@@ -128,135 +156,45 @@ const Ventilation = () => {
 </div>
 
 <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-  <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
-    <img
-      className="w-full h-48 object-cover"
-      src="https://www.med-geraete.de/thumbnail/81/4a/0e/1698301731/1005211_400x400.jpeg?ts=1726126223"
-      alt="DRÄGER 5704281 Wandhalterung für Oxylog 2000plus"
-    />
-    <div className="p-4">
-      <div className="text-sm text-gray-600">Produktnummer: 1005211</div>
-      <h2 className="text-lg font-bold text-gray-900 mt-2">
-        DRÄGER 5704281 Wandhalterung für Oxylog 2000plus
-      </h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className="text-sm text-gray-600 mt-1">DRÄGER 5704281 Wandhalterung für Oxylog 2000plus, Gebraucht</p>
-      <div className="text-xl font-bold text-gray-900 mt-2">€245,00*</div>
-      <button
-        className="mt-4 w-full bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
-        onClick={openModal}
-      >
-        Jetzt anfragen
-      </button>
+  {products.map((product, index) => (
+    <div
+      className="flex flex-col justify-between max-w-xs bg-white rounded-lg shadow-md overflow-hidden h-full"
+      key={index}
+    >
+      {/* Image Section */}
+      <img
+        className="w-full h-48 object-cover"
+        src={product.imageUrl}
+        alt={product.modelName}
+      />
+      {/* Content Section */}
+      <div className="p-4 flex-grow">
+        <div className="text-sm text-gray-600">Produktnummer: {product.productNumber}</div>
+        <h2 className="text-lg font-bold text-gray-900 mt-2">{product.modelName}</h2>
+        <p className="text-sm text-gray-600 mt-1">{product.description}</p>
+      </div>
+      {/* Price and Button Section */}
+      <div className="p-4">
+        <div className="flex flex-col items-center">
+          <div className="text-xl font-bold text-gray-900 mb-4">{product.price}</div>
+          <button
+            className="w-full bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
+            onClick={() => openModal(product)}
+          >
+            Jetzt anfragen
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
-    <img
-      className="w-full h-48"
-      src="https://www.med-geraete.de/thumbnail/e0/a8/dd/1698301820/1005245_e0a8dd009c2ad43a4cff02da1bfbfdda_400x400.jpeg?ts=1726126240"
-      alt="DRÄGER 5704281 Wandhalterung für Oxylog 2000plus"
-    />
-    <div className="p-4">
-      <div className="text-sm text-gray-600">Produktnummer: 1005245</div>
-      <h2 className="text-lg font-bold text-gray-900 mt-2">
-        DRÄGER Evita Infinity V500 Intensivpflegeventilator
-      </h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className="text-sm text-gray-600 mt-1">DRÄGER Evita Infinity V500 Intensivpflegeventilator für Erwachsene, Kinder und</p>
-      <div className="text-xl font-bold text-gray-900 mt-2">€9.500,00*</div>
-      <button
-        className="mt-4 w-full bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
-        onClick={openModal}
-      >
-        Jetzt anfragen
-      </button>
-    </div>
-  </div>
-  <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
-    <img
-      className="w-full h-48 object-cover"
-      src="https://www.med-geraete.de/thumbnail/0f/34/8c/1698134808/1000867a_0f348c2b31573f6022a365b2ba9c37f9_400x400.jpeg?ts=1726040907"
-      alt="DRÄGER 5704281 Wandhalterung für Oxylog 2000plus"
-    />
-    <div className="p-4">
-      <div className="text-sm text-gray-600">Produktnummer: 1000867</div>
-      <h2 className="text-lg font-bold text-gray-900 mt-2">
-        DRÄGER Sekretionsflaschenpaket
-      </h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className="text-sm text-gray-600 mt-1">DRÄGER-Sekretionsflaschenpaket bestehend aus Tragegestell, 2x</p>
-      <div className="text-xl font-bold text-gray-900 mt-2">€125,00*</div>
-      <button
-        className="mt-4 w-full bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
-        onClick={openModal}
-      >
-        Jetzt anfragen
-      </button>
-    </div>
-  </div>
-  <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
-    <img
-      className="w-full h-48 object-cover"
-      src="https://www.med-geraete.de/thumbnail/85/2e/c2/1721152406/1005315_400x400.jpeg?ts=1729160504"
-      alt="DRÄGER 5704281 Wandhalterung für Oxylog 2000plus"
-    />
-    <div className="p-4">
-      <div className="text-sm text-gray-600">Produktnummer: 1005315</div>
-      <h2 className="text-lg font-bold text-gray-900 mt-2">
-        DRÄGER Perseus A500, mobiles Narkosewerkzeug
-      </h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className="text-sm text-gray-600 mt-1">DRÄGER Perseus A500, mobiles Narkosewerkzeug für Erwachsene,</p>
-      <div className="text-xl font-bold text-gray-900 mt-2">€19.800,00*</div>
-      <button
-        className="mt-4 w-full bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
-        onClick={openModal}
-      >
-        Jetzt anfragen
-      </button>
-    </div>
-  </div>
-  <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
-    <img
-      className="w-full h-48 object-cover"
-      src="https://www.med-geraete.de/thumbnail/1f/b0/e8/1732125839/1001435a_400x400.jpeg?ts=1732175758"
-      alt="DRÄGER 5704281 Wandhalterung für Oxylog 2000plus"
-    />
-    <div className="p-4">
-      <div className="text-sm text-gray-600">Produktnummer: 1001435</div>
-      <h2 className="text-lg font-bold text-gray-900 mt-2">
-        ALLE ANÄSTHESIEGERÄTE, DIE IM BEREICH DER TIERMEDIZIN EINGESETZT WERDEN
-      </h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className="text-sm text-gray-600 mt-1">ALLE ANÄSTHESIEGERÄTE, DIE IM BEREICH DER TIERMEDIZIN EINGESETZT WERDEN</p>
-      <div className="text-xl font-bold text-gray-900 mt-2">€0,01*</div>
-      <button
-        className="mt-4 w-full bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
-        onClick={openModal}
-      >
-        Jetzt anfragen
-      </button>
-    </div>
-  </div>
+  ))}
+</div>
+ 
+ 
+
+  
 </div>
 </div>
-</div>
-      {isModalOpen && <Modal closeModal={closeModal} />} 
+      {isModalOpen && <Modal closeModal={closeModal} selectedProduct={selectedProduct}  />} 
 
 
     </>

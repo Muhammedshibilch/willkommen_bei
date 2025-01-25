@@ -19,25 +19,25 @@ const SideNav = () => {
           <Link to={"/shop"}>
             <button className="text-black font-bold text-xl">shop</button>
           </Link>
-          <Link>
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Saugpumpen            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Autoklaven und Sterilisatoren            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Messung des Blutdrucks            </button>
-          </Link>
+          </Link> */}
           <Link to={"/shop/Defibrillators"}>
             <button className="text-black font-extralight text-sm">
             Defibrillatoren            </button>
           </Link>
-          <Link>
+          {/* <Link>
             <button className="text-black font-extralight text-sm"> EKG</button>
-          </Link>
+          </Link> */}
           <Link to={"/shop/Flexible-endoscopes"}>
             {" "}
             <button
@@ -87,7 +87,7 @@ const SideNav = () => {
           )}
 
 
-          <Link>
+          {/* <Link>
             {" "}
             <button
               onClick={() => toggleDropdown("endoscopyColdLightSources")}
@@ -104,8 +104,8 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               Storz              </Link>
             </div>
-          )}
-          <Link>
+          )} */}
+          {/* <Link>
             <button
               onClick={() => toggleDropdown("endoscopyfittings")}
               className="text-black font-extralight text-sm"
@@ -122,19 +122,19 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               weitere Ausstattungen              </Link>
             </div>
-          )}
-          <Link>
+          )} */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Gehäuse und Monitorträger            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Aufbewahrungsort            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Gynäkologie            </button>
-          </Link>
+          </Link> */}
           <Link to={"/shop/HF-Surgery"}>
             <button className="text-black font-extralight text-sm">
             HF-Chirurgie            </button>
@@ -143,15 +143,15 @@ const SideNav = () => {
             <button className="text-black font-extralight text-sm">
             Infusoren Perfusoren            </button>
           </Link>
-          <Link>
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Inkubatoren            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Laborausstattung            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button
               onClick={() => toggleDropdown("medicalantiques")}
               className="text-black font-extralight text-sm"
@@ -167,16 +167,16 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               andere              </Link>
             </div>
-          )}
-          <Link>
+          )} */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Mikroskop            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Möbel            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button
               onClick={() => toggleDropdown("monitoring")}
               className="text-black font-extralight text-sm"
@@ -204,7 +204,7 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               Zubehör von Monitoren              </Link>
             </div>
-          )}
+          )} */}
           <Link to={"/shop/Anesthesia-and-ventilation"}>
             <button
               onClick={() => toggleDropdown("ventilation")}
@@ -236,7 +236,7 @@ const SideNav = () => {
               Dämpfe (Anästhesieverdampfer)              </Link>
             </div>
           )}
-          <Link>
+          {/* <Link>
             <button
               onClick={() => toggleDropdown("investigationlights")}
               className="text-black font-extralight text-sm"
@@ -254,7 +254,7 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               Untersuchungsleuchten              </Link>
             </div>
-          )}
+          )} */}
           <Link to={'/shop/Operating-tables-and-patient-trolleys'}>
             <button
               onClick={() => toggleDropdown("patienttrolleys")}
@@ -272,7 +272,7 @@ const SideNav = () => {
               Patientenwagen              </Link>
             </div>
           )}
-          <Link>
+          {/* <Link>
             <button
               onClick={() => toggleDropdown("fluoroscopy")}
               className="text-black font-extralight text-sm"
@@ -290,12 +290,12 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               Zubehör von Röntgengeräten              </Link>
             </div>
-          )}
-          <Link>
+          )} */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Andere            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button
               onClick={() => toggleDropdown("ultrasound")}
               className="text-black font-extralight text-sm"
@@ -309,39 +309,32 @@ const SideNav = () => {
               <Link className="block text-sky-500 font-extralight text-sm">
               Ultraschall-Vernebler              </Link>
             </div>
-          )}
-          <Link>
+          )} */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Untersuchung            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Videodrucker und -recorder            </button>
-          </Link>
-          <Link>
+          </Link> */}
+          {/* <Link>
             <button className="text-black font-extralight text-sm">
             Zahnarztbehandlung            </button>
-          </Link>
-          <hr />
+          </Link> */}
+          <hr className="w-50" />
           <div className=" rounded-md w-64">
             
             <div className="relative">
               
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded leading-tight focus:outline-none focus:shadow-outline"
+                className="block appearance-none  bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded leading-tight focus:outline-none focus:shadow-outline" style={{width:"200px"}}
               >
                 
                 Preis                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   
-                  <svg
-                    className="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    
-                    <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />{" "}
-                  </svg>
+                 
                 </span>
               </button>
               {isOpen && (
