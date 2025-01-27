@@ -11,7 +11,7 @@ const Footer = () => {
           <p className="leading-relaxed">
             Für Unterstützung und Beratung wenden Sie sich bitte an:
           </p>
-          <p className="font-bold my-2 leading-relaxed">+49-(0)8206 9624-0</p>
+          {/* <p className="font-bold my-2 leading-relaxed">+49-(0)8206 9624-0</p> */}
           <p className="leading-relaxed">Mo-Do, 7 Uhr - 17 Uhr</p>
           <p className="leading-relaxed">Fr, 7 Uhr - 13 Uhr</p>
           <p className="leading-relaxed">Oder über unser Kontaktformular.</p>
