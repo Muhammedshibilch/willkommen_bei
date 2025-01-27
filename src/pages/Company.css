@@ -1,0 +1,67 @@
+/* General Styling */
+.row {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Mobile-Only Styles */
+  @media (max-width: 768px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-12 {
+      margin-bottom: 20px;
+      padding: 0 10px; /* Padding for better text spacing */
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.95rem; /* Adjust text size for mobile */
+      text-align: justify; /* Maintain justified text alignment */
+    }
+   
+
+  }
+  @media only screen and (max-width: 768px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    [style*="styles.container"] {
+      gap: 20px;
+    }
+
+    [style*="styles.section"] {
+      padding: 15px;
+      text-align: center;
+    }
+
+    [style*="styles.section"] h1,
+    [style*="styles.section"] h2 {
+      font-size: 1.2rem;
+    }
+
+    [style*="styles.section"] p {
+      font-size: 0.9rem;
+    }
+  }
+ 

@@ -36,7 +36,7 @@ function App() {
       <Route path='/team' element={<Team/>}/>
       <Route path='/references' element={<References/>}/>
       <Route path='/Downloads' element={<Downloads/>}/>
-      <Route path='/contact' element={<Contact/>}/>
+      {/* <Route path='/contact' element={<Contact/>}/> */}
       <Route path='/warrenty' element={<Warrenty/>}/>
       <Route path='/shop/Anesthesia-and-ventilation' element={<Ventilation/>}/>
       <Route path='/shop/Flexible-endoscopes' element={<Endoscopes/>}/>

@@ -74,7 +74,7 @@ const Ventilation = () => {
 
       <div className="row mt-3">
         <div className="col-lg-2"></div>
-        <div className="col-lg-2 mt-4">
+        <div className="col-lg-2 mt-4 hidden lg:block">
           <SideNav />
         </div>
         <div className="col-lg-7 mt-4">
